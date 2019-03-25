@@ -1,7 +1,12 @@
 {
   "shapes": {
-	"b1": "pot2",
-	"b6": "thermos2"
+    "b1": "baking_tray1",
+    "b2": "baking_tray2",
+    "b3": "blender1",
+	"b4": "blender2",
+	"b5": "bowl1",
+	"b6": "bowl2",
+	"b7": "bowl3"
   },
   "colors": {
     "gray": [87, 87, 87],

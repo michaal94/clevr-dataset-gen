@@ -103,7 +103,10 @@ def add_object(object_dir, name, scale, loc, theta=0):
   bpy.context.scene.objects.active = bpy.data.objects[new_name]
   bpy.context.object.rotation_euler[2] = theta
   bpy.ops.transform.resize(value=(scale, scale, scale))
-  bpy.ops.transform.translate(value=(x, y, scale))
+
+  # bpy.ops.transform.translate(value=(x, y, scale))
+  # Try placing in z=0
+  bpy.ops.transform.translate(value=(x, y, 0.0))
 
 
 def load_materials(material_dir):
@@ -140,8 +143,11 @@ def add_material(name, **properties):
   # Attach the new material to the active object
   # Make sure it doesn't already have materials
   obj = bpy.context.active_object
-  assert len(obj.data.materials) == 0
-  obj.data.materials.append(mat)
+  # assert len(obj.data.materials) == 0
+  # obj.data.materials.append(mat)
+
+  if len(obj.data.materials) == 0:
+    obj.data.materials.append(mat)
 
   # Find the output node of the new material
   output_node = None

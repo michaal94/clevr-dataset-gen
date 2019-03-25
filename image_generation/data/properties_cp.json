@@ -1,7 +1,10 @@
 {
   "shapes": {
-	"b1": "pot2",
-	"b6": "thermos2"
+    "cube": "SmoothCube_v2",
+    "sphere": "Sphere",
+    "cylinder": "SmoothCylinder",
+	"test_obj": "asd",
+	"kettle": "Kettle"
   },
   "colors": {
     "gray": [87, 87, 87],
@@ -15,7 +18,8 @@
   },
   "materials": {
     "rubber": "Rubber",
-    "metal": "MyMetal"
+    "metal": "MyMetal",
+	"skin": "Bricks"
   },
   "sizes": {
     "large": 0.7,

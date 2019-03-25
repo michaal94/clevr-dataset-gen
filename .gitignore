@@ -2,8 +2,15 @@
 __pycache__/
 *.swp
 *.pyc
-output/
+output*/
 
 
 #sublime
 sublime/
+
+# blend files
+*.blend*
+
+# images
+*.jpg
+*.png
