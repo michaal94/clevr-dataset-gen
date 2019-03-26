@@ -1,6 +1,5 @@
 {
-  "shapes": {
-	"obj01": "baking_tray1",
+    "obj01": "baking_tray1",
     "obj02": "baking_tray2",
     "obj03": "blender1",
     "obj04": "blender2",
@@ -45,23 +44,5 @@
     "obj43": "toaster2",
     "obj44": "wine_glass1",
     "obj45": "wine_glass2",
-    "obj46": "wine_glass3"	
-  },
-  "colors": {
-    "gray": [87, 87, 87],
-    "red": [173, 35, 35],
-    "blue": [42, 75, 215],
-    "green": [29, 105, 20],
-    "brown": [129, 74, 25],
-    "purple": [129, 38, 192],
-    "cyan": [41, 208, 208],
-    "yellow": [255, 238, 51]
-  },
-  "materials": {
-    "rubber": "Rubber",
-    "metal": "MyMetal"
-  },
-  "sizes": {
-    "large": 0.7
-  }
+    "obj46": "wine_glass3"
 }

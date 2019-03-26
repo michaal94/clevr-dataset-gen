@@ -6,7 +6,14 @@
 # of patent rights can be found in the PATENTS file in the same directory.
 
 from __future__ import print_function
-import math, sys, random, argparse, json, os, tempfile
+import math
+import sys
+import random
+import argparse
+import json
+import os
+import tempfile
+# import pycocotools.mask as mask_utils
 from datetime import datetime as dt
 from collections import Counter
 
@@ -24,7 +31,8 @@ blender --background --python render_images.py -- [arguments to this script]
 
 INSIDE_BLENDER = True
 try:
-    import bpy, bpy_extras
+    import bpy
+    import bpy_extras
     from mathutils import Vector
 except ImportError as e:
     INSIDE_BLENDER = False
@@ -44,113 +52,155 @@ if INSIDE_BLENDER:
 parser = argparse.ArgumentParser()
 
 # Input options
-parser.add_argument('--base_scene_blendfile', default='data/base_scene.blend',
-        help="Base blender file on which all scenes are based; includes " +
-                    "ground plane, lights, and camera.")
-parser.add_argument('--properties_json', default='data/properties.json',
-        help="JSON file defining objects, materials, sizes, and colors. " +
-                 "The \"colors\" field maps from CLEVR color names to RGB values; " +
-                 "The \"sizes\" field maps from CLEVR size names to scalars used to " +
-                 "rescale object models; the \"materials\" and \"shapes\" fields map " +
-                 "from CLEVR material and shape names to .blend files in the " +
-                 "--object_material_dir and --shape_dir directories respectively.")
-parser.add_argument('--shape_dir', default='data/shapes',
-        help="Directory where .blend files for object models are stored")
-parser.add_argument('--material_dir', default='data/materials',
-        help="Directory where .blend files for materials are stored")
-parser.add_argument('--shape_color_combos_json', default=None,
-        help="Optional path to a JSON file mapping shape names to a list of " +
-                 "allowed color names for that shape. This allows rendering images " +
-                 "for CLEVR-CoGenT.")
+parser.add_argument(
+    '--base_scene_blendfile',
+    default='data/base_scene.blend',
+    help="Base blender file on which all scenes are based; includes " +
+    "ground plane, lights, and camera.")
+parser.add_argument(
+    '--properties_json', default='data/properties.json',
+    help="JSON file defining objects, materials, sizes, and colors. " +
+    "The \"colors\" field maps from CLEVR color names to RGB values; " +
+    "The \"sizes\" field maps from CLEVR size names to scalars used to " +
+    "rescale object models; the \"materials\" and \"shapes\" fields map " +
+    "from CLEVR material and shape names to .blend files in the " +
+    "--object_material_dir and --shape_dir directories respectively.")
+parser.add_argument(
+    '--boxes_json',
+    default='data/boxes.json',
+    help="JSON file defining bounding boxes for objects (save path)")
+parser.add_argument(
+    '--shape_dir',
+    default='data/shapes',
+    help="Directory where .blend files for object models are stored")
+parser.add_argument(
+    '--material_dir',
+    default='data/materials',
+    help="Directory where .blend files for materials are stored")
+parser.add_argument(
+    '--shape_color_combos_json',
+    default=None,
+    help="Optional path to a JSON file mapping shape names to a list of " +
+    "allowed color names for that shape. This allows rendering images " +
+    "for CLEVR-CoGenT.")
 
 # Settings for objects
-parser.add_argument('--min_objects', default=3, type=int,
-        help="The minimum number of objects to place in each scene")
-parser.add_argument('--max_objects', default=10, type=int,
-        help="The maximum number of objects to place in each scene")
-parser.add_argument('--min_dist', default=0.25, type=float,
-        help="The minimum allowed distance between object centers")
-parser.add_argument('--margin', default=0.4, type=float,
-        help="Along all cardinal directions (left, right, front, back), all " +
-                 "objects will be at least this distance apart. This makes resolving " +
-                 "spatial relationships slightly less ambiguous.")
-parser.add_argument('--min_pixels_per_object', default=200, type=int,
-        help="All objects will have at least this many visible pixels in the " +
-                 "final rendered images; this ensures that no objects are fully " +
-                 "occluded by other objects.")
-parser.add_argument('--max_retries', default=50, type=int,
-        help="The number of times to try placing an object before giving up and " +
-                 "re-placing all objects in the scene.")
+parser.add_argument(
+    '--min_objects', default=3, type=int,
+    help="The minimum number of objects to place in each scene")
+parser.add_argument(
+    '--max_objects', default=10, type=int,
+    help="The maximum number of objects to place in each scene")
+parser.add_argument(
+    '--min_dist', default=0.25, type=float,
+    help="The minimum allowed distance between object centers")
+parser.add_argument(
+    '--margin', default=0.4, type=float,
+    help="Along all cardinal directions (left, right, front, back), all " +
+    "objects will be at least this distance apart. This makes resolving " +
+    "spatial relationships slightly less ambiguous.")
+parser.add_argument(
+    '--min_pixels_per_object', default=200, type=int,
+    help="All objects will have at least this many visible pixels in the " +
+    "final rendered images; this ensures that no objects are fully " +
+    "occluded by other objects.")
+parser.add_argument(
+    '--max_retries', default=50, type=int,
+    help="The number of times to try placing an object before giving up and " +
+    "re-placing all objects in the scene.")
 
 # Output settings
-parser.add_argument('--start_idx', default=0, type=int,
-        help="The index at which to start for numbering rendered images. Setting " +
-                 "this to non-zero values allows you to distribute rendering across " +
-                 "multiple machines and recombine the results later.")
-parser.add_argument('--num_images', default=5, type=int,
-        help="The number of images to render")
-parser.add_argument('--filename_prefix', default='CLEVR',
-        help="This prefix will be prepended to the rendered images and JSON scenes")
-parser.add_argument('--split', default='new',
-        help="Name of the split for which we are rendering. This will be added to " +
-                 "the names of rendered images, and will also be stored in the JSON " +
-                 "scene structure for each image.")
-parser.add_argument('--output_image_dir', default='../output/images/',
-        help="The directory where output images will be stored. It will be " +
-                 "created if it does not exist.")
-parser.add_argument('--output_scene_dir', default='../output/scenes/',
-        help="The directory where output JSON scene structures will be stored. " +
-                 "It will be created if it does not exist.")
-parser.add_argument('--output_scene_file', default='../output/CLEVR_scenes.json',
-        help="Path to write a single JSON file containing all scene information")
-parser.add_argument('--output_blend_dir', default='output/blendfiles',
-        help="The directory where blender scene files will be stored, if the " +
-                 "user requested that these files be saved using the " +
-                 "--save_blendfiles flag; in this case it will be created if it does " +
-                 "not already exist.")
-parser.add_argument('--save_blendfiles', type=int, default=0,
-        help="Setting --save_blendfiles 1 will cause the blender scene file for " +
-                 "each generated image to be stored in the directory specified by " +
-                 "the --output_blend_dir flag. These files are not saved by default " +
-                 "because they take up ~5-10MB each.")
-parser.add_argument('--version', default='1.0',
-        help="String to store in the \"version\" field of the generated JSON file")
-parser.add_argument('--license',
-        default="Creative Commons Attribution (CC-BY 4.0)",
-        help="String to store in the \"license\" field of the generated JSON file")
-parser.add_argument('--date', default=dt.today().strftime("%m/%d/%Y"),
-        help="String to store in the \"date\" field of the generated JSON file; " +
-                 "defaults to today's date")
+parser.add_argument(
+    '--start_idx', default=0, type=int,
+    help="The index at which to start for numbering rendered images. Setting " +
+    "this to non-zero values allows you to distribute rendering across " +
+    "multiple machines and recombine the results later.")
+parser.add_argument(
+    '--num_images', default=5, type=int,
+    help="The number of images to render")
+parser.add_argument(
+    '--filename_prefix', default='CLEVR',
+    help="This prefix will be prepended to the rendered images and JSON scenes")
+parser.add_argument(
+    '--split', default='new',
+    help="Name of the split for which we are rendering. This will be added to " +
+    "the names of rendered images, and will also be stored in the JSON " +
+    "scene structure for each image.")
+parser.add_argument(
+    '--output_image_dir', default='../output/images/',
+    help="The directory where output images will be stored. It will be " +
+    "created if it does not exist.")
+parser.add_argument(
+    '--output_scene_dir', default='../output/scenes/',
+    help="The directory where output JSON scene structures will be stored. " +
+    "It will be created if it does not exist.")
+parser.add_argument(
+    '--output_scene_file', default='../output/CLEVR_scenes.json',
+    help="Path to write a single JSON file containing all scene information")
+parser.add_argument(
+    '--output_blend_dir', default='output/blendfiles',
+    help="The directory where blender scene files will be stored, if the " +
+    "user requested that these files be saved using the " +
+    "--save_blendfiles flag; in this case it will be created if it does " +
+    "not already exist.")
+parser.add_argument(
+    '--save_blendfiles', type=int, default=0,
+    help="Setting --save_blendfiles 1 will cause the blender scene file for " +
+    "each generated image to be stored in the directory specified by " +
+    "the --output_blend_dir flag. These files are not saved by default " +
+    "because they take up ~5-10MB each.")
+parser.add_argument(
+    '--version', default='1.0',
+    help="String to store in the \"version\" field of the generated JSON file")
+parser.add_argument(
+    '--license', default="Creative Commons Attribution (CC-BY 4.0)",
+    help="String to store in the \"license\" field of the generated JSON file")
+parser.add_argument(
+    '--date', default=dt.today().strftime("%m/%d/%Y"),
+    help="String to store in the \"date\" field of the generated JSON file; " +
+    "defaults to today's date")
 
 # Rendering options
-parser.add_argument('--use_gpu', default=0, type=int,
-        help="Setting --use_gpu 1 enables GPU-accelerated rendering using CUDA. " +
-                 "You must have an NVIDIA GPU with the CUDA toolkit installed for " +
-                 "to work.")
-parser.add_argument('--width', default=320, type=int,
-        help="The width (in pixels) for the rendered images")
-parser.add_argument('--height', default=240, type=int,
-        help="The height (in pixels) for the rendered images")
-parser.add_argument('--key_light_jitter', default=1.0, type=float,
-        help="The magnitude of random jitter to add to the key light position.")
-parser.add_argument('--fill_light_jitter', default=1.0, type=float,
-        help="The magnitude of random jitter to add to the fill light position.")
-parser.add_argument('--back_light_jitter', default=1.0, type=float,
-        help="The magnitude of random jitter to add to the back light position.")
-parser.add_argument('--camera_jitter', default=0.5, type=float,
-        help="The magnitude of random jitter to add to the camera position")
-parser.add_argument('--render_num_samples', default=512, type=int,
-        help="The number of samples to use when rendering. Larger values will " +
-                 "result in nicer images but will cause rendering to take longer.")
-parser.add_argument('--render_min_bounces', default=8, type=int,
-        help="The minimum number of bounces to use for rendering.")
-parser.add_argument('--render_max_bounces', default=8, type=int,
-        help="The maximum number of bounces to use for rendering.")
-parser.add_argument('--render_tile_size', default=256, type=int,
-        help="The tile size to use for rendering. This should not affect the " +
-                 "quality of the rendered image but may affect the speed; CPU-based " +
-                 "rendering may achieve better performance using smaller tile sizes " +
-                 "while larger tile sizes may be optimal for GPU-based rendering.")
+parser.add_argument(
+    '--use_gpu', default=0, type=int,
+    help="Setting --use_gpu 1 enables GPU-accelerated rendering using CUDA. " +
+    "You must have an NVIDIA GPU with the CUDA toolkit installed for " +
+    "to work.")
+parser.add_argument(
+    '--width', default=320, type=int,
+    help="The width (in pixels) for the rendered images")
+parser.add_argument(
+    '--height', default=240, type=int,
+    help="The height (in pixels) for the rendered images")
+parser.add_argument(
+    '--key_light_jitter', default=1.0, type=float,
+    help="The magnitude of random jitter to add to the key light position.")
+parser.add_argument(
+    '--fill_light_jitter', default=1.0, type=float,
+    help="The magnitude of random jitter to add to the fill light position.")
+parser.add_argument(
+    '--back_light_jitter', default=1.0, type=float,
+    help="The magnitude of random jitter to add to the back light position.")
+parser.add_argument(
+    '--camera_jitter', default=0.5, type=float,
+    help="The magnitude of random jitter to add to the camera position")
+parser.add_argument(
+    '--render_num_samples', default=512, type=int,
+    help="The number of samples to use when rendering. Larger values will " +
+    "result in nicer images but will cause rendering to take longer.")
+parser.add_argument(
+    '--render_min_bounces', default=8, type=int,
+    help="The minimum number of bounces to use for rendering.")
+parser.add_argument(
+    '--render_max_bounces', default=8, type=int,
+    help="The maximum number of bounces to use for rendering.")
+parser.add_argument(
+    '--render_tile_size', default=256, type=int,
+    help="The tile size to use for rendering. This should not affect the " +
+    "quality of the rendered image but may affect the speed; CPU-based " +
+    "rendering may achieve better performance using smaller tile sizes " +
+    "while larger tile sizes may be optimal for GPU-based rendering.")
+
 
 def main(args):
     num_digits = 6
@@ -169,6 +219,8 @@ def main(args):
     if args.save_blendfiles == 1 and not os.path.isdir(args.output_blend_dir):
         os.makedirs(args.output_blend_dir)
 
+    utils.get_boundings_size(args.properties_json, args.shape_dir, args.boxes_json)
+
     all_scene_paths = []
     for i in range(args.num_images):
         img_path = img_template % (i + args.start_idx)
@@ -178,7 +230,8 @@ def main(args):
         if args.save_blendfiles == 1:
             blend_path = blend_template % (i + args.start_idx)
         num_objects = random.randint(args.min_objects, args.max_objects)
-        render_scene(args,
+        render_scene(
+            args,
             num_objects=num_objects,
             output_index=(i + args.start_idx),
             output_split=args.split,
@@ -206,15 +259,14 @@ def main(args):
         json.dump(output, f)
 
 
-
-def render_scene(args,
+def render_scene(
+        args,
         num_objects=5,
         output_index=0,
         output_split='none',
         output_image='render.png',
         output_scene='render_json',
-        output_blendfile=None,
-    ):
+        output_blendfile=None):
 
     # Load the main blendfile
     bpy.ops.wm.open_mainfile(filepath=args.base_scene_blendfile)
@@ -307,12 +359,12 @@ def render_scene(args,
             bpy.data.objects['Lamp_Fill'].location[i] += rand(args.fill_light_jitter)
 
     # Now make some random objects
-    objects, blender_objects = add_random_objects(scene_struct, num_objects, args, camera)
-
-    for o in blender_objects:
-        print("jkhgfdskhfjgdshfgdaskfghdjkfghdsjk")
-        print(o.data.materials[0])
-        print("jkhgfdskhfjgdshfgdaskfghdjkfghdsjk")
+    objects, blender_objects = None, None
+    while objects is None:
+        import gc
+        gc.collect()
+        objects, blender_objects = add_random_objects(scene_struct, num_objects, args, camera)
+        print("\n\nRelocating all objects\n\n")
 
     # Render the scene and dump the scene data structure
     scene_struct['objects'] = objects
@@ -347,6 +399,9 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         object_mapping = [(v, k) for k, v in properties['shapes'].items()]
         size_mapping = list(properties['sizes'].items())
 
+    with open(args.boxes_json, 'r') as f:
+        boxes = json.load(f)
+
     shape_color_combos = None
     if args.shape_color_combos_json is not None:
         with open(args.shape_color_combos_json, 'r') as f:
@@ -355,13 +410,26 @@ def add_random_objects(scene_struct, num_objects, args, camera):
     positions = []
     objects = []
     blender_objects = []
+    sizes = []
     for i in range(num_objects):
         # Choose a random size
         size_name, r = random.choice(size_mapping)
+
         # print("Very long line with breaks \n \n \n %f \n \n \n " % r)
         # Try to place the object, ensuring that we don't intersect any existing
         # objects and that we are more than the desired margin away from all existing
         # objects along all cardinal directions.
+
+        # Choose random color and shape
+        if shape_color_combos is None:
+            obj_name, obj_name_out = random.choice(object_mapping)
+            color_name, rgba = random.choice(list(color_name_to_rgba.items()))
+        else:
+            obj_name_out, color_choices = random.choice(shape_color_combos)
+            color_name = random.choice(color_choices)
+            obj_name = [k for k, v in object_mapping if v == obj_name_out][0]
+            rgba = color_name_to_rgba[color_name]
+
         num_tries = 0
         while True:
             # If we try and fail to place an object too many times, then delete all
@@ -370,19 +438,35 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             if num_tries > args.max_retries:
                 for obj in blender_objects:
                     utils.delete_object(obj)
-                return add_random_objects(scene_struct, num_objects, args, camera)
-            x = random.uniform(-3, 3)
-            y = random.uniform(-3, 3)
+                del blender_objects
+                del objects
+                # return add_random_objects(scene_struct, num_objects, args, camera)
+                return None, None
+            x = random.uniform(-4, 4)
+            y = random.uniform(-4, 4)
+            # Choose random orientation for the object.
+            theta = 360.0 * random.random()
+
             # Check to make sure the new object is further than min_dist from all
             # other objects, and further than margin along the four cardinal directions
-            dists_good = True
+            # dists_good = True
             margins_good = True
-            for (xx, yy, rr) in positions:
+
+            pos_temp = positions
+            pos_temp.append((x, y, r, theta))
+            size_temp = sizes
+            size_temp.append(boxes[obj_name])
+
+            dists_good = not utils.check_intersection_list(pos_temp, size_temp, args.min_dist)
+
+            # dists_good = True
+
+            for (xx, yy, rr, th) in positions:
                 dx, dy = x - xx, y - yy
-                dist = math.sqrt(dx * dx + dy * dy)
-                if dist - r - rr < args.min_dist:
-                    dists_good = False
-                    break
+                # dist = math.sqrt(dx * dx + dy * dy)
+                # if dist - r - rr < args.min_dist:
+                #     dists_good = False
+                #     break
                 for direction_name in ['left', 'right', 'front', 'behind']:
                     direction_vec = scene_struct['directions'][direction_name]
                     assert direction_vec[2] == 0
@@ -398,28 +482,23 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             if dists_good and margins_good:
                 break
 
-        # Choose random color and shape
-        if shape_color_combos is None:
-            obj_name, obj_name_out = random.choice(object_mapping)
-            color_name, rgba = random.choice(list(color_name_to_rgba.items()))
-        else:
-            obj_name_out, color_choices = random.choice(shape_color_combos)
-            color_name = random.choice(color_choices)
-            obj_name = [k for k, v in object_mapping if v == obj_name_out][0]
-            rgba = color_name_to_rgba[color_name]
+        # # Choose random color and shape
+        # if shape_color_combos is None:
+        #     # obj_name, obj_name_out = random.choice(object_mapping)
+        #     color_name, rgba = random.choice(list(color_name_to_rgba.items()))
+        # else:
+        #     obj_name_out, color_choices = random.choice(shape_color_combos)
+        #     color_name = random.choice(color_choices)
+        #     obj_name = [k for k, v in object_mapping if v == obj_name_out][0]
+        #     rgba = color_name_to_rgba[color_name]
 
-        # For cube, adjust the size a bit
-        # if obj_name == 'Cube':
-        #     r /= math.sqrt(2)
-
-        # Choose random orientation for the object.
-        theta = 360.0 * random.random()
-
+        # print("dfsgfdgdffggf", theta)
         # Actually add the object to the scene
         utils.add_object(args.shape_dir, obj_name, r, (x, y), theta=theta)
         obj = bpy.context.object
         blender_objects.append(obj)
-        positions.append((x, y, r))
+        positions.append((x, y, r, theta))
+        sizes.append(boxes[obj_name])
 
         # Attach a random material
         mat_name, mat_name_out = random.choice(material_mapping)
@@ -438,14 +517,15 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         })
 
     # Check that all objects are at least partially visible in the rendered image
-    # all_visible = check_visibility(blender_objects, args.min_pixels_per_object)
-    # if not all_visible:
-    #     # If any of the objects are fully occluded then start over; delete all
-    #     # objects from the scene and place them all again.
-    #     print('Some objects are occluded; replacing objects')
-    #     for obj in blender_objects:
-    #         utils.delete_object(obj)
-    #     return add_random_objects(scene_struct, num_objects, args, camera)
+    all_visible = check_visibility(blender_objects, args.min_pixels_per_object)
+    # all_visible = True
+    if not all_visible:
+        # If any of the objects are fully occluded then start over; delete all
+        # objects from the scene and place them all again.
+        print('Some objects are occluded; replacing objects')
+        for obj in blender_objects:
+            utils.delete_object(obj)
+        return add_random_objects(scene_struct, num_objects, args, camera)
 
     return objects, blender_objects
 
@@ -489,12 +569,12 @@ def check_visibility(blender_objects, min_pixels_per_object):
     Returns True if all objects are visible and False otherwise.
     """
     f, path = tempfile.mkstemp(suffix='.png')
-    object_colors = render_shadeless(blender_objects, path=path)
+    object_colors = render_shadeless(blender_objects, path)
     img = bpy.data.images.load(path)
     p = list(img.pixels)
     color_count = Counter((p[i], p[i+1], p[i+2], p[i+3])
                                                 for i in range(0, len(p), 4))
-    os.remove(path)
+    # os.remove(path)
     if len(color_count) != len(blender_objects) + 1:
         return False
     for _, count in color_count.most_common():
@@ -530,26 +610,75 @@ def render_shadeless(blender_objects, path='flat.png'):
 
     # Add random shadeless materials to all objects
     object_colors = set()
-    old_materials = []
+    # old_materials = []
+    # for i, obj in enumerate(blender_objects):
+    #     # old_materials.append(obj.data.materials[0])
+    #     old_materials.append(obj.data.materials)
+    #     bpy.ops.material.new()
+    #     mat = bpy.data.materials['Material']
+    #     mat.name = 'Material_%d' % i
+    #     while True:
+    #         r, g, b = [random.random() for _ in range(3)]
+    #         if (r, g, b) not in object_colors: break
+    #     object_colors.add((r, g, b))
+    #     mat.diffuse_color = [r, g, b]
+    #     mat.use_shadeless = True
+    #     # obj.data.materials[0] = mat
+    #     for i in range(len(obj.data.materials)):
+    #         obj.data.materials[i] = mat
+
+    new_obj = []
+    print(blender_objects)
+    for obj in bpy.data.objects:
+        obj.select = False
     for i, obj in enumerate(blender_objects):
-        old_materials.append(obj.data.materials[0])
+        # print(bpy.context.selected_objects)
+        # old_materials.append(obj.data.materials[0])
+        # old_materials.append(obj.data.materials)
+        # print(obj)
+        obj.select = True
+        # bpy.context.scene.objects.active = bpy.data.objects[obj.name]
+        # print(bpy.context.selected_objects)
+        bpy.ops.object.duplicate(linked=False, mode='INIT')
+        # print(bpy.context.selected_objects)
+        utils.set_layer(obj, 2)
+        # print(bpy.data.materials[:])
         bpy.ops.material.new()
+        # print(bpy.data.materials[:])
         mat = bpy.data.materials['Material']
-        mat.name = 'Material_%d' % i
+        mat.name = 'Material_temp_%d' % i
         while True:
             r, g, b = [random.random() for _ in range(3)]
-            if (r, g, b) not in object_colors: break
+            if (r, g, b) not in object_colors:
+                break
         object_colors.add((r, g, b))
         mat.diffuse_color = [r, g, b]
         mat.use_shadeless = True
-        obj.data.materials[0] = mat
+        # obj.data.materials[0] = mat
+        # print(bpy.context.selected_objects)
+        new_obj.append(bpy.context.selected_objects[0])
+        for i in range(len(bpy.context.selected_objects[0].data.materials)):
+            bpy.context.selected_objects[0].data.materials[i] = mat
+        for o in bpy.data.objects:
+            o.select = False
 
     # Render the scene
     bpy.ops.render.render(write_still=True)
 
+    # # Undo the above; first restore the materials to objects
+    # for mat, obj in zip(old_materials, blender_objects):
+    #     # obj.data.materials[0] = mat
+    #     for i in range(len(mat)):
+    #         obj.data.materials[i] = mat[i]
+
     # Undo the above; first restore the materials to objects
-    for mat, obj in zip(old_materials, blender_objects):
-        obj.data.materials[0] = mat
+    for obj in new_obj:
+        obj.select = True
+        bpy.ops.object.delete()
+
+    for obj in blender_objects:
+        # obj.data.materials[0] = mat
+        utils.set_layer(obj, 0)
 
     # Move the lights and ground back to layer 0
     utils.set_layer(bpy.data.objects['Lamp_Key'], 0)
