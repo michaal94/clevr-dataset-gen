@@ -13,9 +13,11 @@ import argparse
 import json
 import os
 import tempfile
-# import pycocotools.mask as mask_utils
+import pycocotools.mask as mask_utils
 from datetime import datetime as dt
 from collections import Counter
+import cv2
+import numpy as np
 
 """
 Renders random scenes using Blender, each with with a random number of objects;
@@ -68,7 +70,11 @@ parser.add_argument(
 parser.add_argument(
     '--boxes_json',
     default='data/boxes.json',
-    help="JSON file defining bounding boxes for objects (save path)")
+    help="JSON file defining local bounding boxes for objects (save path)")
+parser.add_argument(
+    '--object_props',
+    default='data/object_properties.json',
+    help="JSON file defining properties of objects")
 parser.add_argument(
     '--shape_dir',
     default='data/shapes',
@@ -361,8 +367,6 @@ def render_scene(
     # Now make some random objects
     objects, blender_objects = None, None
     while objects is None:
-        import gc
-        gc.collect()
         objects, blender_objects = add_random_objects(scene_struct, num_objects, args, camera)
         print("\n\nRelocating all objects\n\n")
 
@@ -399,6 +403,9 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         object_mapping = [(v, k) for k, v in properties['shapes'].items()]
         size_mapping = list(properties['sizes'].items())
 
+    with open(args.object_props, 'r') as f:
+        object_properties = json.load(f)
+
     with open(args.boxes_json, 'r') as f:
         boxes = json.load(f)
 
@@ -412,14 +419,6 @@ def add_random_objects(scene_struct, num_objects, args, camera):
     blender_objects = []
     sizes = []
     for i in range(num_objects):
-        # Choose a random size
-        size_name, r = random.choice(size_mapping)
-
-        # print("Very long line with breaks \n \n \n %f \n \n \n " % r)
-        # Try to place the object, ensuring that we don't intersect any existing
-        # objects and that we are more than the desired margin away from all existing
-        # objects along all cardinal directions.
-
         # Choose random color and shape
         if shape_color_combos is None:
             obj_name, obj_name_out = random.choice(object_mapping)
@@ -429,6 +428,13 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             color_name = random.choice(color_choices)
             obj_name = [k for k, v in object_mapping if v == obj_name_out][0]
             rgba = color_name_to_rgba[color_name]
+
+        # Choose a random size
+        if object_properties[obj_name]['change_size']:
+            size_name, r = random.choice(size_mapping)
+        else:
+            size_name = object_properties[obj_name]['size']
+            r = 0.7
 
         num_tries = 0
         while True:
@@ -445,7 +451,8 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             x = random.uniform(-4, 4)
             y = random.uniform(-4, 4)
             # Choose random orientation for the object.
-            theta = 360.0 * random.random()
+
+            theta = 360.0 * (random.random() - 0.5) * 2 / 3
 
             # Check to make sure the new object is further than min_dist from all
             # other objects, and further than margin along the four cardinal directions
@@ -501,11 +508,20 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         sizes.append(boxes[obj_name])
 
         # Attach a random material
-        mat_name, mat_name_out = random.choice(material_mapping)
-        # utils.add_material(mat_name, Color=rgba)
+        if object_properties[obj_name]['change_material']:
+            mat_name, mat_name_out = random.choice(material_mapping)
+            utils.add_material(mat_name, Color=rgba)
+        else:
+            mat_name_out = object_properties[obj_name]['material']
 
         # Record data about the object in the scene data structure
         pixel_coords = utils.get_camera_coords(camera, obj.location)
+
+        # obj_name_out = ''.join(c for c in obj_name_out if not c.isdigit())
+        # obj_name_out = ''.join(c if c != '_' else ' ' for c in obj_name_out)
+
+        obj_name_out = object_properties[obj_name]['name']
+
         objects.append({
             'shape': obj_name_out,
             'size': size_name,
@@ -517,7 +533,7 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         })
 
     # Check that all objects are at least partially visible in the rendered image
-    all_visible = check_visibility(blender_objects, args.min_pixels_per_object)
+    all_visible, masks = check_visibility(blender_objects, args.min_pixels_per_object)
     # all_visible = True
     if not all_visible:
         # If any of the objects are fully occluded then start over; delete all
@@ -526,6 +542,12 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         for obj in blender_objects:
             utils.delete_object(obj)
         return add_random_objects(scene_struct, num_objects, args, camera)
+
+    for o, ob in zip(objects, blender_objects):
+        print(o['shape'], ob.name)
+
+    for obj, mask in zip(objects, masks):
+        obj['mask'] = mask
 
     return objects, blender_objects
 
@@ -570,17 +592,21 @@ def check_visibility(blender_objects, min_pixels_per_object):
     """
     f, path = tempfile.mkstemp(suffix='.png')
     object_colors = render_shadeless(blender_objects, path)
+    print(object_colors)
     img = bpy.data.images.load(path)
     p = list(img.pixels)
     color_count = Counter((p[i], p[i+1], p[i+2], p[i+3])
                                                 for i in range(0, len(p), 4))
     # os.remove(path)
     if len(color_count) != len(blender_objects) + 1:
-        return False
+        return False, None
     for _, count in color_count.most_common():
         if count < min_pixels_per_object:
-            return False
-    return True
+            return False, None
+
+    masks = assign_masks(object_colors, path)
+
+    return True, masks
 
 
 def render_shadeless(blender_objects, path='flat.png'):
@@ -609,7 +635,7 @@ def render_shadeless(blender_objects, path='flat.png'):
     utils.set_layer(bpy.data.objects['Ground'], 2)
 
     # Add random shadeless materials to all objects
-    object_colors = set()
+    object_colors = []
     # old_materials = []
     # for i, obj in enumerate(blender_objects):
     #     # old_materials.append(obj.data.materials[0])
@@ -628,7 +654,7 @@ def render_shadeless(blender_objects, path='flat.png'):
     #         obj.data.materials[i] = mat
 
     new_obj = []
-    print(blender_objects)
+    # print(blender_objects)
     for obj in bpy.data.objects:
         obj.select = False
     for i, obj in enumerate(blender_objects):
@@ -647,12 +673,16 @@ def render_shadeless(blender_objects, path='flat.png'):
         # print(bpy.data.materials[:])
         mat = bpy.data.materials['Material']
         mat.name = 'Material_temp_%d' % i
+        # while True:
+        #     r, g, b = [random.random() for _ in range(3)]
+        #     if (r, g, b) not in object_colors:
+        #         break
         while True:
-            r, g, b = [random.random() for _ in range(3)]
-            if (r, g, b) not in object_colors:
+            r, g, b = [random.randint(0, 255) for _ in range(3)]
+            if (r, g, b) not in object_colors and (r, g, b) != (13, 13, 13):
                 break
-        object_colors.add((r, g, b))
-        mat.diffuse_color = [r, g, b]
+        object_colors.append((r, g, b))
+        mat.diffuse_color = [float(r) / 255, float(g) / 255, float(b) / 255]
         mat.use_shadeless = True
         # obj.data.materials[0] = mat
         # print(bpy.context.selected_objects)
@@ -663,7 +693,11 @@ def render_shadeless(blender_objects, path='flat.png'):
             o.select = False
 
     # Render the scene
+    # Save gamma
+    gamma = bpy.context.scene.view_settings.view_transform
+    bpy.context.scene.view_settings.view_transform = 'Raw'
     bpy.ops.render.render(write_still=True)
+    bpy.context.scene.view_settings.view_transform = gamma
 
     # # Undo the above; first restore the materials to objects
     # for mat, obj in zip(old_materials, blender_objects):
@@ -691,7 +725,22 @@ def render_shadeless(blender_objects, path='flat.png'):
     render_args.engine = old_engine
     render_args.use_antialiasing = old_use_antialiasing
 
+    for ob, col in zip(blender_objects, object_colors):
+        print(ob.name, col)
+
     return object_colors
+
+
+def assign_masks(colors, image_path):
+    masks = []
+    img = cv2.imread(image_path)
+    img_rgb = img[:, :, [2, 1, 0]]
+    for color in colors:
+        mask = np.all(img_rgb == color, axis=-1)
+        mask = mask_utils.encode(np.asfortranarray(mask.astype(np.uint8)))
+        mask['counts'] = str(mask['counts'], "utf-8")
+        masks.append(mask)
+    return masks
 
 
 if __name__ == '__main__':

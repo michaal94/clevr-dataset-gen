@@ -1,6 +1,14 @@
 import os
 import json
 
+with open('./data/object_properties.json', 'r') as f:
+    objects = json.load(f)
+
+with open('./data/properties.json', 'r') as f:
+    properties = json.load(f)
+
+
+
 shapes_list = sorted(os.listdir('./data/shapes'))
 for i in reversed(range(len(shapes_list))):
     if '.blend' not in shapes_list[i]:
@@ -30,6 +38,6 @@ for i in range(len(shapes_list)):
 print(objects)
 
 
-with open('./object_properties.json', 'w') as f:
+with open('./material_properties.json', 'w') as f:
     json.dump(objects, f, sort_keys=True, indent=4, separators=(',', ': '))
 

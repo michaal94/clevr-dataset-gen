@@ -1,0 +1,370 @@
+{
+    "baking_tray1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "baking tray",
+        "size": "FILL"
+    },
+    "baking_tray2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "baking tray",
+        "size": "FILL"
+    },
+    "blender1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "blender",
+        "size": "FILL"
+    },
+    "blender2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "blender",
+        "size": "FILL"
+    },
+    "bowl1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "bowl",
+        "size": "FILL"
+    },
+    "bowl2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "bowl",
+        "size": "FILL"
+    },
+    "bowl3": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "bowl",
+        "size": "FILL"
+    },
+    "chopping_board1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "chopping board",
+        "size": "FILL"
+    },
+    "chopping_board2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "chopping board",
+        "size": "FILL"
+    },
+    "chopping_board3": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "chopping board",
+        "size": "FILL"
+    },
+    "coffee_maker1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "coffee maker",
+        "size": "FILL"
+    },
+    "coffee_maker2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "coffee maker",
+        "size": "FILL"
+    },
+    "food_box1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "food box",
+        "size": "FILL"
+    },
+    "food_box2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "food box",
+        "size": "FILL"
+    },
+    "fork1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "fork",
+        "size": "FILL"
+    },
+    "fork2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "fork",
+        "size": "FILL"
+    },
+    "glass1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "glass",
+        "size": "FILL"
+    },
+    "glass2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "glass",
+        "size": "FILL"
+    },
+    "glass3": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "glass",
+        "size": "FILL"
+    },
+    "glass4": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "glass",
+        "size": "FILL"
+    },
+    "glass5": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "glass",
+        "size": "FILL"
+    },
+    "kettle1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "kettle",
+        "size": "FILL"
+    },
+    "kettle2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "kettle",
+        "size": "FILL"
+    },
+    "knife1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "knife",
+        "size": "FILL"
+    },
+    "knife2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "knife",
+        "size": "FILL"
+    },
+    "mug1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "mug",
+        "size": "FILL"
+    },
+    "mug2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "mug",
+        "size": "FILL"
+    },
+    "mug3": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "mug",
+        "size": "FILL"
+    },
+    "pan1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "pan",
+        "size": "FILL"
+    },
+    "pan2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "pan",
+        "size": "FILL"
+    },
+    "plate1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "plate",
+        "size": "FILL"
+    },
+    "plate2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "plate",
+        "size": "FILL"
+    },
+    "pot1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "pot",
+        "size": "FILL"
+    },
+    "pot2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "pot",
+        "size": "FILL"
+    },
+    "scissors1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "scissors",
+        "size": "FILL"
+    },
+    "scissors2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "scissors",
+        "size": "FILL"
+    },
+    "soda_can": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "soda can",
+        "size": "FILL"
+    },
+    "spoon1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "spoon",
+        "size": "FILL"
+    },
+    "spoon2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "spoon",
+        "size": "FILL"
+    },
+    "thermos1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "thermos",
+        "size": "FILL"
+    },
+    "thermos2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "thermos",
+        "size": "FILL"
+    },
+    "toaster1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "toaster",
+        "size": "FILL"
+    },
+    "toaster2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "toaster",
+        "size": "FILL"
+    },
+    "wine_glass1": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "wine glass",
+        "size": "FILL"
+    },
+    "wine_glass2": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "wine glass",
+        "size": "FILL"
+    },
+    "wine_glass3": {
+        "change_material": false,
+        "change_size": false,
+        "color": "FILL",
+        "material": "FILL",
+        "name": "wine glass",
+        "size": "FILL"
+    }
+}
