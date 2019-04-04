@@ -4,8 +4,8 @@ import numpy as np
 import os
 import json
 
-scene_file = "../output/scenes/CLEVR_new_000000.json"
-img_file = "../output/images/CLEVR_new_000000.png"
+scene_file = "../output/scenes/CLEVR_new_000001.json"
+img_file = "../output/images/CLEVR_new_000001.png"
 
 with open(scene_file, 'r') as f:
     props = json.load(f)

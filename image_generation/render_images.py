@@ -76,6 +76,10 @@ parser.add_argument(
     default='data/object_properties.json',
     help="JSON file defining properties of objects")
 parser.add_argument(
+    '--grounds',
+    default='data/ground.json',
+    help="JSON file defining ground")
+parser.add_argument(
     '--shape_dir',
     default='data/shapes',
     help="Directory where .blend files for object models are stored")
@@ -83,6 +87,10 @@ parser.add_argument(
     '--material_dir',
     default='data/materials',
     help="Directory where .blend files for materials are stored")
+parser.add_argument(
+    '--ground_dir',
+    default='data/materials_ground',
+    help="Directory where .blend files for ground materials are stored")
 parser.add_argument(
     '--shape_color_combos_json',
     default=None,
@@ -279,6 +287,13 @@ def render_scene(
 
     # Load materials
     utils.load_materials(args.material_dir)
+    utils.load_materials(args.ground_dir)
+
+    with open(args.grounds, 'r') as f:
+        grounds = json.load(f)
+
+    grounds = list(grounds.keys())
+    grounds.append(None)
 
     # Set render arguments so we can get pixel coordinates later.
     # We use functionality specific to the CYCLES renderer so BLENDER_RENDER
@@ -326,9 +341,10 @@ def render_scene(
         return 2.0 * L * (random.random() - 0.5)
 
     # Add random jitter to camera position
-    if args.camera_jitter > 0:
-        for i in range(3):
-            bpy.data.objects['Camera'].location[i] += rand(args.camera_jitter)
+    # if args.camera_jitter > 0:
+    #     for i in range(3):
+    #         bpy.data.objects['Camera'].location[i] += rand(args.camera_jitter)
+
 
     # Figure out the left, up, and behind directions along the plane and record
     # them in the scene structure
@@ -352,6 +368,10 @@ def render_scene(
     scene_struct['directions']['right'] = tuple(-plane_left)
     scene_struct['directions']['above'] = tuple(plane_up)
     scene_struct['directions']['below'] = tuple(-plane_up)
+
+    material = random.choice(grounds)
+    if material is not None:
+        utils.add_ground(material)
 
     # Add random jitter to lamp positions
     if args.key_light_jitter > 0:
@@ -401,7 +421,9 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             color_name_to_rgba[name] = rgba
         material_mapping = [(v, k) for k, v in properties['materials'].items()]
         object_mapping = [(v, k) for k, v in properties['shapes'].items()]
-        size_mapping = list(properties['sizes'].items())
+        size_mapping = properties['sizes']
+
+    white = [0.88, 0.88, 0.88, 1.0]
 
     with open(args.object_props, 'r') as f:
         object_properties = json.load(f)
@@ -431,10 +453,16 @@ def add_random_objects(scene_struct, num_objects, args, camera):
 
         # Choose a random size
         if object_properties[obj_name]['change_size']:
-            size_name, r = random.choice(size_mapping)
+            size_name = random.choice(list(size_mapping.keys()))
+            r = size_mapping[size_name]
+            if size_name == "bigger":
+                size_name = object_properties[obj_name]['size1']
+            else:
+                size_name = object_properties[obj_name]['size2']
         else:
-            size_name = object_properties[obj_name]['size']
-            r = 0.7
+            size_name = object_properties[obj_name]['size1']
+            r = size_mapping["bigger"]
+
 
         num_tries = 0
         while True:
@@ -448,11 +476,12 @@ def add_random_objects(scene_struct, num_objects, args, camera):
                 del objects
                 # return add_random_objects(scene_struct, num_objects, args, camera)
                 return None, None
-            x = random.uniform(-4, 4)
-            y = random.uniform(-4, 4)
+            x = random.uniform(-3.5, 3.5)
+            y = random.uniform(-3.5, 3.5)
             # Choose random orientation for the object.
 
-            theta = 360.0 * (random.random() - 0.5) * 2 / 3
+            # theta = 360.0 * (random.random() - 0.5) * 2 / 3
+            theta = 180.0 * random.random() - 120.0
 
             # Check to make sure the new object is further than min_dist from all
             # other objects, and further than margin along the four cardinal directions
@@ -463,10 +492,6 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             pos_temp.append((x, y, r, theta))
             size_temp = sizes
             size_temp.append(boxes[obj_name])
-
-            dists_good = not utils.check_intersection_list(pos_temp, size_temp, args.min_dist)
-
-            # dists_good = True
 
             for (xx, yy, rr, th) in positions:
                 dx, dy = x - xx, y - yy
@@ -486,20 +511,14 @@ def add_random_objects(scene_struct, num_objects, args, camera):
                 if not margins_good:
                     break
 
+            dists_good = not utils.check_intersection_list(pos_temp, size_temp, args.min_dist)
+
+            # dists_good = True
+
+
             if dists_good and margins_good:
                 break
 
-        # # Choose random color and shape
-        # if shape_color_combos is None:
-        #     # obj_name, obj_name_out = random.choice(object_mapping)
-        #     color_name, rgba = random.choice(list(color_name_to_rgba.items()))
-        # else:
-        #     obj_name_out, color_choices = random.choice(shape_color_combos)
-        #     color_name = random.choice(color_choices)
-        #     obj_name = [k for k, v in object_mapping if v == obj_name_out][0]
-        #     rgba = color_name_to_rgba[color_name]
-
-        # print("dfsgfdgdffggf", theta)
         # Actually add the object to the scene
         utils.add_object(args.shape_dir, obj_name, r, (x, y), theta=theta)
         obj = bpy.context.object
@@ -507,29 +526,52 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         positions.append((x, y, r, theta))
         sizes.append(boxes[obj_name])
 
+
         # Attach a random material
         if object_properties[obj_name]['change_material']:
-            mat_name, mat_name_out = random.choice(material_mapping)
-            utils.add_material(mat_name, Color=rgba)
+            # mat_name, mat_name_out = random.choice(material_mapping)
+            change = random.choice([True, False])
+            if change:
+                mat_name_out = object_properties[obj_name]['material2']
+                mat_name = mat_name_out.capitalize()
+                if object_properties[obj_name]['change_color2']:
+                    utils.add_material(mat_name, Color=rgba)
+                else:
+                    color_name = object_properties[obj_name]['color2']
+                    utils.add_material(mat_name, Color=white)
+            else:
+                mat_name_out = object_properties[obj_name]['material1']
+                if object_properties[obj_name]['change_color1']:
+                    utils.add_color(rgba)
+                else:
+                    color_name = object_properties[obj_name]['color1']
         else:
-            mat_name_out = object_properties[obj_name]['material']
+            mat_name_out = object_properties[obj_name]['material1']
+            if object_properties[obj_name]['change_color1']:
+                utils.add_color(rgba)
+            else:
+                color_name = object_properties[obj_name]['color1']
 
         # Record data about the object in the scene data structure
         pixel_coords = utils.get_camera_coords(camera, obj.location)
 
-        # obj_name_out = ''.join(c for c in obj_name_out if not c.isdigit())
-        # obj_name_out = ''.join(c if c != '_' else ' ' for c in obj_name_out)
-
         obj_name_out = object_properties[obj_name]['name']
 
+        weight = object_properties[obj_name]['weight']
+        movement = object_properties[obj_name]['movement']
+        shape = object_properties[obj_name]['shape']
+
         objects.append({
-            'shape': obj_name_out,
+            'name': obj_name_out,
+            'shape': shape,
             'size': size_name,
             'material': mat_name_out,
             '3d_coords': tuple(obj.location),
             'rotation': theta,
             'pixel_coords': pixel_coords,
             'color': color_name,
+            'weight': weight,
+            'movement': movement
         })
 
     # Check that all objects are at least partially visible in the rendered image
@@ -636,23 +678,6 @@ def render_shadeless(blender_objects, path='flat.png'):
 
     # Add random shadeless materials to all objects
     object_colors = []
-    # old_materials = []
-    # for i, obj in enumerate(blender_objects):
-    #     # old_materials.append(obj.data.materials[0])
-    #     old_materials.append(obj.data.materials)
-    #     bpy.ops.material.new()
-    #     mat = bpy.data.materials['Material']
-    #     mat.name = 'Material_%d' % i
-    #     while True:
-    #         r, g, b = [random.random() for _ in range(3)]
-    #         if (r, g, b) not in object_colors: break
-    #     object_colors.add((r, g, b))
-    #     mat.diffuse_color = [r, g, b]
-    #     mat.use_shadeless = True
-    #     # obj.data.materials[0] = mat
-    #     for i in range(len(obj.data.materials)):
-    #         obj.data.materials[i] = mat
-
     new_obj = []
     # print(blender_objects)
     for obj in bpy.data.objects:

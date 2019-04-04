@@ -27,7 +27,7 @@ for i in range(len(shapes_list)):
     obj_name_df = ''.join(c if not c.isdigit() else (' ' + c) for c in obj_name_df).capitalize()
     # print(obj_name_df)
     obj_change_mat = df[df['Object name'] == obj_name_df]['Material change'].item()
-    obj_change_size = False
+    print(obj_change_mat)
     obj_material1 = df[df['Object name'] == obj_name_df]['Material 1 (default)'].item().lower()
     obj_material2 = df[df['Object name'] == obj_name_df]['Material 2'].item().lower()
     obj_change_col1 = df[df['Object name'] == obj_name_df]['Color1 change'].item()
@@ -36,7 +36,12 @@ for i in range(len(shapes_list)):
     obj_color1 = df[df['Object name'] == obj_name_df]['Colors - material 1'].item().lower()
     obj_color2 = df[df['Object name'] == obj_name_df]['Colors - material 2'].item().lower()
     print(obj_color1, obj_color2)
-    obj_size = 'FILL'
+    obj_change_size = df[df['Object name'] == obj_name_df]['Size change'].item()
+    weight = df[df['Object name'] == obj_name_df]['Weight'].item().lower()
+    movement = df[df['Object name'] == obj_name_df]['Movement'].item().lower()
+    shape = df[df['Object name'] == obj_name_df]['Shape'].item().lower()
+    size1 = df[df['Object name'] == obj_name_df]['Size 1'].item().lower()
+    size2 = df[df['Object name'] == obj_name_df]['Size 2'].item().lower()
     objects[obj] = {
         'name': obj_name,
         'change_material': obj_change_mat,
@@ -47,7 +52,12 @@ for i in range(len(shapes_list)):
         'material2': obj_material2,
         'color1': obj_color1,
         'color2': obj_color2,
-        'size': obj_size
+        'size1': size1,
+        'size2': size2,
+        # 'size_change': size_change,
+        'weight': weight,
+        'movement': movement,
+        'shape': shape
     }
 
 print(objects)

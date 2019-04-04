@@ -48,6 +48,7 @@
     "wine_glass3": "wine_glass3"
   },
   "colors": {
+    "gray": [87, 87, 87],
     "red": [173, 35, 35],
     "blue": [42, 75, 215],
     "green": [29, 105, 20],
@@ -58,11 +59,9 @@
   },
   "materials": {
     "rubber": "Rubber",
-	"plastic": "Plastic",
-	"metal": "BrushedAluminium"
+    "metal": "MyMetal"
   },
   "sizes": {
-    "bigger": 0.6,
-	"smaller": 0.45
+    "large": 0.7
   }
 }

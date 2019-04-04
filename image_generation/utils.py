@@ -124,7 +124,7 @@ def add_object(object_dir, name, scale, loc, theta=0):
     # Set the new object as active, then rotate, scale, and translate it
     x, y = loc
     bpy.context.scene.objects.active = bpy.data.objects[new_name]
-    bpy.context.object.rotation_euler[2] = theta
+    bpy.context.object.rotation_euler[2] = math.radians(theta)
     bpy.ops.transform.resize(value=(scale, scale, scale))
 
     # bpy.ops.transform.translate(value=(x, y, scale))
@@ -167,11 +167,10 @@ def add_material(name, **properties):
     # Attach the new material to the active object
     # Make sure it doesn't already have materials
     obj = bpy.context.active_object
-    # assert len(obj.data.materials) == 0
-    # obj.data.materials.append(mat)
 
-    if len(obj.data.materials) == 0:
-        obj.data.materials.append(mat)
+    for i in range(0, len(obj.data.materials)):
+        if 'Changable' in obj.data.materials[i].name:
+            obj.data.materials[i] = mat
 
     # Find the output node of the new material
     output_node = None
@@ -199,6 +198,96 @@ def add_material(name, **properties):
         group_node.outputs['Shader'],
         output_node.inputs['Surface'],
     )
+
+    disp = False
+    for o in group_node.outputs:
+        if o.name == "Displacement":
+            disp = True
+
+    if disp:
+        mat.node_tree.links.new(
+            group_node.outputs['Displacement'],
+            output_node.inputs['Displacement'],
+        )
+
+
+def add_ground(name):
+    """
+    Create a new material and assign it to the active object. "name" should be the
+    name of a material that has been previously loaded using load_materials.
+    """
+    # Figure out how many materials are already in the scene
+    mat_count = len(bpy.data.materials)
+
+    # Create a new material; it is not attached to anything and
+    # it will be called "Material"
+    bpy.ops.material.new()
+
+    # Get a reference to the material we just created and rename it;
+    # then the next time we make a new material it will still be called
+    # "Material" and we will still be able to look it up by name
+    mat = bpy.data.materials['Material']
+    mat.name = 'Material_ground'
+
+    obj = bpy.data.objects['Ground']
+    # Attach the new material to the active object
+    # Make sure it doesn't already have materials
+    assert len(obj.data.materials) == 0
+    obj.data.materials.append(mat)
+
+    # if len(obj.data.materials) == 0:
+    #     obj.data.materials.append(mat)
+
+    # Find the output node of the new material
+    output_node = None
+    for n in mat.node_tree.nodes:
+        if n.name == 'Material Output':
+            output_node = n
+            break
+
+    # Add a new GroupNode to the node tree of the active material,
+    # and copy the node tree from the preloaded node group to the
+    # new group node. This copying seems to happen by-value, so
+    # we can create multiple materials of the same type without them
+    # clobbering each other
+    group_node = mat.node_tree.nodes.new('ShaderNodeGroup')
+    group_node.node_tree = bpy.data.node_groups[name]
+
+    # Wire the output of the new group node to the input of
+    # the MaterialOutput node
+    mat.node_tree.links.new(
+        group_node.outputs['Shader'],
+        output_node.inputs['Surface'],
+    )
+
+    disp = False
+    for o in group_node.outputs:
+        if o.name == "Displacement":
+            disp = True
+
+    if disp:
+        mat.node_tree.links.new(
+            group_node.outputs['Displacement'],
+            output_node.inputs['Displacement'],
+        )
+
+
+def add_color(rgba):
+
+    # Attach the new material to the active object
+    # Make sure it doesn't already have materials
+    obj = bpy.context.active_object
+
+    for i in range(0, len(obj.data.materials)):
+        print(obj.data.materials[i].name)
+        if 'Changable' in obj.data.materials[i].name:
+            mat = obj.data.materials[i]
+
+    group_node = mat.node_tree.nodes['Group']
+    # group_node.node_tree = bpy.data.node_groups[name]
+    for inp in group_node.inputs:
+        if inp.name == 'Color':
+            inp.default_value = rgba
 
 
 def check_intersection_list(centres_list, size_list, margin):

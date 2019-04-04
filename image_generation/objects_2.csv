@@ -1,47 +1,47 @@
-Object name,Material change,Material 1 (default),Material 2,Color1 change,Color2 change,Colors - material 1,Colors - material 2,,,,,,,,,,
-Baking tray 1,TRUE,Metal,-,FALSE,FALSE,dark gray,-,,,,,,,,,,
-Baking tray 2,TRUE,Metal,Rubber,FALSE,TRUE,dark gray,all rubber,,,,,,,,,,
-Blender 1,TRUE,Plastic,-,FALSE,FALSE,brown/beige,-,,,,,,,,,,
-Blender 2,TRUE,Plastic,-,TRUE,FALSE,all plastic + transparent,-,,,,,,,,,,
-Bowl 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
-Bowl 2,TRUE,Ceramic,-,FALSE,FALSE,white,-,,,,,,,,,,
-Bowl 3,TRUE,Ceramic,Plastic,FALSE,TRUE,brown,all plastic,,,,,,,,,,
-Chopping board 1,TRUE,Bamboo,-,FALSE,FALSE,brown,-,,,,,,,,,,
-Chopping board 2,TRUE,Plastic,Rubber,TRUE,TRUE,all plastic,all rubber,,,,,,,,,,
-Chopping board 3,TRUE,Wooden,-,FALSE,FALSE,brown,-,,,,,,,,,,
-Coffee maker 1,TRUE,Plastic,-,FALSE,FALSE,black,-,,,,,,,,,,
-Coffee maker 2,TRUE,Plastic,-,FALSE,FALSE,white,-,,,,,,,,,,
-Food box 1,TRUE,Plastic,-,FALSE,FALSE,white,-,,,,,,,,,,
-Food box 2,TRUE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,,,,,,,,,,
-Fork 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,,,,,,,,,,
-Fork 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,,,,,,,,,,
-Glass 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
-Glass 2,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
-Glass 3,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,,,,,,,,,,
-Glass 4,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,,,,,,,,,,
-Glass 5,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
-Kettle 1,TRUE,Metal,-,TRUE,FALSE,all like plastic,-,,,,,,,,,,
-Kettle 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,,,,,,,,,,
-Knife 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,,,,,,,,,,
-Knife 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,,,,,,,,,,
-Mug 1,TRUE,Ceramic,-,FALSE,FALSE,black,-,,,,,,,,,,
-Mug 2,TRUE,Ceramic,-,TRUE,FALSE,all like plastic,-,,,,,,,,,,
-Mug 3,TRUE,Ceramic,-,FALSE,FALSE,red,-,,,,,,,,,,
-Pan 1,TRUE,Metal,-,FALSE,FALSE,black,-,,,,,,,,,,
-Pan 2,TRUE,Metal,-,FALSE,FALSE,brown/beige,-,,,,,,,,,,
-Plate 1,TRUE,Ceramic,-,FALSE,FALSE,white,-,,,,,,,,,,
-Plate 2,TRUE,Ceramic,-,TRUE,FALSE,all rubber,-,,,,,,,,,,
-Pot 1,TRUE,Metal,-,FALSE,FALSE,metalllic,-,,,,,,,,,,
-Pot 2,TRUE,Metal,-,FALSE,FALSE,black,-,,,,,,,,,,rubber - pastel collors
-Scissors 1,TRUE,Metal,-,FALSE,FALSE,black,-,,,,,,,,,,
-Scissors 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,,,,,,,,,,
-Soda can,TRUE,Metal,-,TRUE,FALSE,all plastic,-,,,,,,,,,,
-Spoon 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,,,,,,,,,,plastic - more shiny colors
-Spoon 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,,,,,,,,,,
-Thermos 1,TRUE,Metal,-,TRUE,FALSE,all rubber,-,,,,,,,,,,
-Thermos 2,TRUE,Plastic,Metal,TRUE,FALSE,all pllastic,metallic,,,,,,,,,,
-Toaster 1,TRUE,Metal,-,FALSE,FALSE,chrome,-,,,,,,,,,,
-Toaster 2,TRUE,Metal,-,FALSE,FALSE,red,-,,,,,,,,,,
-Wine glass 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
-Wine glass 2,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,,,,,,,,,,
-Wine glass 3,TRUE,Glass,-,FALSE,FALSE,transparent,-,,,,,,,,,,
+Object name,Material change,Material 1 (default),Material 2,Color1 change,Color2 change,Colors - material 1,Colors - material 2,Weight,Movement,Size change,Size 1,Size 2,Shape
+Baking tray 1,FALSE,Metal,-,FALSE,FALSE,gray,-,light,picked-up,FALSE,large,-,cuboid
+Baking tray 2,TRUE,Metal,Rubber,FALSE,TRUE,gray,all rubber,light,picked-up,TRUE,large,medium,cuboid
+Blender 1,FALSE,Plastic,-,FALSE,FALSE,brown,-,heavy,moved,FALSE,large,-,irregularly shaped object
+Blender 2,FALSE,Plastic,-,TRUE,FALSE,all plastic + transparent,-,heavy,moved,FALSE,large,-,cylindrical object
+Bowl 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,medium-weight,picked-up,FALSE,medium,-,hemisphere
+Bowl 2,FALSE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,picked-up,TRUE,medium,small,hemisphere
+Bowl 3,TRUE,Ceramic,Plastic,FALSE,TRUE,brown,all plastic,medium-weight,picked-up,FALSE,medium,-,hemisphere
+Chopping board 1,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,picked-up,TRUE,large,medium,cuboid
+Chopping board 2,TRUE,Plastic,Rubber,TRUE,TRUE,all plastic,all rubber,light,picked-up,FALSE,large,-,cuboid
+Chopping board 3,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,picked-up,FALSE,large,-,cuboid
+Coffee maker 1,FALSE,Plastic,-,FALSE,FALSE,black,-,heavy,moved,FALSE,large,-,cylindrical object
+Coffee maker 2,FALSE,Plastic,-,FALSE,FALSE,white,-,heavy,moved,FALSE,large,-,irregularly shaped object
+Food box 1,FALSE,Plastic,-,FALSE,FALSE,white,-,light,picked-up,FALSE,medium,-,irregularly shaped object
+Food box 2,FALSE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,light,picked-up,TRUE,medium,small,cylindrical object
+Fork 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,picked-up,FALSE,small,-,long thin object
+Fork 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,picked-up,FALSE,small,-,long thin object
+Glass 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,picked-up,FALSE,medium,-,cylindrical object
+Glass 2,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,picked-up,FALSE,medium,-,cylindrical object
+Glass 3,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,picked-up,TRUE,medium,small,cylindrical object
+Glass 4,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,picked-up,FALSE,medium,-,cylindrical object
+Glass 5,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,picked-up,FALSE,medium,-,cuboid
+Kettle 1,FALSE,Metal,-,TRUE,FALSE,all like plastic,-,heavy,moved,FALSE,large,-,irregularly shaped object
+Kettle 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,heavy,moved,FALSE,large,-,irregularly shaped object
+Knife 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,picked-up,FALSE,small,-,long thin object
+Knife 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,picked-up,FALSE,small,-,long thin object
+Mug 1,FALSE,Ceramic,-,TRUE,FALSE,all like plastic,-,medium-weight,picked-up,TRUE,medium,small,cylindrical object
+Mug 2,FALSE,Ceramic,-,FALSE,FALSE,black,-,medium-weight,picked-up,FALSE,medium,-,cylindrical object
+Mug 3,FALSE,Ceramic,-,FALSE,FALSE,red,-,medium-weight,picked-up,FALSE,medium,-,cylindrical object
+Pan 1,FALSE,Metal,-,FALSE,FALSE,black,-,heavy,picked-up,FALSE,large,-,irregularly shaped object
+Pan 2,FALSE,Metal,-,FALSE,FALSE,brown,-,medium-weight,picked-up,FALSE,large,-,irregularly shaped object
+Plate 1,FALSE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,picked-up,FALSE,medium,-,cylindrical object
+Plate 2,FALSE,Ceramic,-,TRUE,FALSE,all rubber,-,medium-weight,picked-up,TRUE,medium,small,cylindrical object
+Pot 1,FALSE,Metal,-,FALSE,FALSE,metalllic,-,heavy,picked-up,TRUE,large,medium,cylindrical object
+Pot 2,FALSE,Metal,-,FALSE,FALSE,black,-,heavy,picked-up,FALSE,large,-,irregularly shaped object
+Scissors 1,FALSE,Metal,-,FALSE,FALSE,black,-,light,picked-up,FALSE,small,-,irregularly shaped object
+Scissors 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,picked-up,FALSE,small,-,irregularly shaped object
+Soda can,FALSE,Metal,-,TRUE,FALSE,all plastic,-,light,picked-up,FALSE,medium,-,cylindrical object
+Spoon 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,picked-up,FALSE,small,-,long thin object
+Spoon 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,picked-up,FALSE,small,-,long thin object
+Thermos 1,FALSE,Metal,-,TRUE,FALSE,all rubber,-,medium-weight,picked-up,FALSE,medium,-,cylindrical object
+Thermos 2,TRUE,Plastic,Metal,TRUE,FALSE,all pllastic,metallic,light,picked-up,FALSE,medium,-,cylindrical object
+Toaster 1,FALSE,Metal,-,FALSE,FALSE,metallic,-,heavy,moved,FALSE,large,-,cuboid
+Toaster 2,FALSE,Metal,-,FALSE,FALSE,red,-,heavy,moved,FALSE,large,-,cuboid
+Wine glass 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,picked-up,FALSE,medium,-,irregularly shaped object
+Wine glass 2,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,picked-up,FALSE,medium,-,irregularly shaped object
+Wine glass 3,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,picked-up,FALSE,medium,-,irregularly shaped object
