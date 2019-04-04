@@ -26,8 +26,8 @@
     "Weight": [
       "light", "heavy", "medium-weight"
     ],
-    "Movement": [
-      "pickable", "movable"
+    "Functionality": [
+      "portable", "movable"
     ]
   },
   "functions": [
@@ -52,9 +52,9 @@
       "terminal": false
     },
     {
-      "name": "filter_movement",
+      "name": "filter_functionality",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Movement"],
+      "side_inputs": ["Functionality"],
       "output": "ObjectSet",
       "terminal": false
     },
@@ -131,9 +131,9 @@
       "terminal": true
     },
     {
-      "name": "query_movement",
+      "name": "query_functionality",
       "inputs": ["Object"],
-      "output": "Movement",
+      "output": "Functionality",
       "terminal": true
     },
     {
@@ -179,8 +179,8 @@
       "terminal": true
     },
     {
-      "name": "equal_movement",
-      "inputs": ["Movement", "Movement"],
+      "name": "equal_functionality",
+      "inputs": ["Functionality", "Functionality"],
       "output": "Bool",
       "terminal": true
     },
@@ -263,7 +263,7 @@
       "terminal": false
     },
     {
-      "name": "same_movement",
+      "name": "same_functionality",
       "inputs": ["Object"],
       "output": "ObjectSet",
       "terminal": false
@@ -277,7 +277,7 @@
     {
       "name": "filter",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "ObjectSet",
       "terminal": false,
       "template_only": true
@@ -285,7 +285,7 @@
     {
       "name": "filter_unique",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Object",
       "terminal": false,
       "template_only": true
@@ -293,7 +293,7 @@
     {
       "name": "filter_count",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Integer",
       "terminal": true,
       "template_only": true
@@ -301,7 +301,7 @@
     {
       "name": "filter_exist",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Bool",
       "terminal": true,
       "template_only": true
@@ -309,7 +309,7 @@
     {
       "name": "relate_filter",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "ObjectSet",
       "terminal": false,
       "template_only": true
@@ -317,7 +317,7 @@
     {
       "name": "relate_filter_unique",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Object",
       "terminal": false,
       "template_only": true
@@ -325,7 +325,7 @@
     {
       "name": "relate_filter_count",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Integer",
       "terminal": false,
       "template_only": true
@@ -333,7 +333,7 @@
     {
       "name": "relate_filter_exist",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movement", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
       "output": "Bool",
       "terminal": false,
       "template_only": true

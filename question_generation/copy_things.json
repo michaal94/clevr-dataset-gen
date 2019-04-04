@@ -1,0 +1,328 @@
+"side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<F2>",
+          "<S2>",
+          "<N2>"
+        ],
+
+
+<Z> <W> <C> <M> <F> <S><N>
+<Z2> <W2> <C2> <M2> <F2> <S2><N2>
+<Z3> <W3> <C3> <M3> <F3> <S3><N3>
+<Z4> <W4> <C4> <M4> <F4> <S4><N4>
+
+
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<F3>",
+          "<S3>",
+          "<N3>"
+
+
+          "<Z4>",
+          "<W4>",
+          "<C4>",
+          "<M4>",
+          "<F4>",
+          "<S4>",
+          "<N4>"
+
+
+"side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<F>",
+          "<S>",
+          "<N>"
+        ],
+
+,
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N4>"
+        ],
+        "type": "NULL"
+      }
+
+
+
+
+,
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F2>"
+        ],
+        "type": "NULL"
+      }
+
+
+,
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F3>"
+        ],
+        "type": "NULL"
+      }
+
+,
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S4>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<F4>"
+        ],
+        "type": "NULL"
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+{
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Functionality",
+        "name": "<F>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      }
+
+
+{
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Functionality",
+        "name": "<F2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+
+
+
+{
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Functionality",
+        "name": "<F3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+
+
+
+
+
+
+{
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Functionality",
+        "name": "<F4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      },
+      {
+        "type": "Name",
+        "name": "<N4>"
+      }
+
+
+
+
+

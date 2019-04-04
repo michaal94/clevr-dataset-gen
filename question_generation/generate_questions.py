@@ -99,7 +99,7 @@ def precompute_filter_options(scene_struct, metadata):
     attribute_map = {}
 
     if metadata['dataset'] == 'CLEVR-v1.0':
-        attr_keys = ['size', 'weight', 'color', 'material', 'movement', 'shape', 'name']
+        attr_keys = ['size', 'weight', 'color', 'material', 'functionality', 'shape', 'name']
     else:
         assert False, 'Unrecognized dataset'
 
@@ -149,7 +149,7 @@ def add_empty_filter_options(attribute_map, metadata, num_to_add):
     # Add some filtering criterion that do NOT correspond to objects
 
     if metadata['dataset'] == 'CLEVR-v1.0':
-        attr_keys = ['Size', 'Weight', 'Color', 'Material', 'Movement', 'Shape', 'Name']
+        attr_keys = ['Size', 'Weight', 'Color', 'Material', 'Functionality', 'Shape', 'Name']
     else:
         assert False, 'Unrecognized dataset'
 
@@ -213,16 +213,19 @@ def other_heuristic(text, param_vals):
     if ' other ' not in text and ' another ' not in text:
         return text
     target_keys = {
-        '<Z>',  '<C>',  '<M>',  '<S>',
-        '<Z2>', '<C2>', '<M2>', '<S2>',
+        '<Z>', '<W>', '<C>', '<M>', '<F>', '<S>', '<N>',
+        '<Z2>', '<W2>', '<C2>', '<M2>', '<F2>', '<S2>', '<N2>',
     }
     if param_vals.keys() != target_keys:
         return text
     key_pairs = [
         ('<Z>', '<Z2>'),
+        ('<W>', '<W2>'),
         ('<C>', '<C2>'),
         ('<M>', '<M2>'),
+        ('<F>', '<F2>'),
         ('<S>', '<S2>'),
+        ('<N>', '<N2>'),
     ]
     remove_other = False
     for k1, k2 in key_pairs:
@@ -515,9 +518,9 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
             text = ' '.join(text.split())
         print(text)
         text = adjust_plurals(text, plurals)
-        # text = replace_optionals(text)
+        text = replace_optionals(text)
         text = ' '.join(text.split())
-        # text = other_heuristic(text, state['vals'])
+        text = other_heuristic(text, state['vals'])
         text_questions.append(text)
 
     return text_questions, structured_questions, answers
