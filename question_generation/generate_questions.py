@@ -99,7 +99,7 @@ def precompute_filter_options(scene_struct, metadata):
     attribute_map = {}
 
     if metadata['dataset'] == 'CLEVR-v1.0':
-        attr_keys = ['size', 'weight', 'color', 'material', 'functionality', 'shape', 'name']
+        attr_keys = ['size', 'weight', 'color', 'material', 'movability', 'shape', 'name']
     else:
         assert False, 'Unrecognized dataset'
 
@@ -149,7 +149,7 @@ def add_empty_filter_options(attribute_map, metadata, num_to_add):
     # Add some filtering criterion that do NOT correspond to objects
 
     if metadata['dataset'] == 'CLEVR-v1.0':
-        attr_keys = ['Size', 'Weight', 'Color', 'Material', 'Functionality', 'Shape', 'Name']
+        attr_keys = ['Size', 'Weight', 'Color', 'Material', 'Movability', 'Shape', 'Name']
     else:
         assert False, 'Unrecognized dataset'
 
@@ -261,12 +261,12 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
     final_states = []
 
     # Check which constrain there is (not solving none of them or both)
-    constr = None
-    for d in template["constraints"]:
-        if 'S' in [x[1] for x in d["params"] if isinstance(x, str)]:
-            constr = 'Shape'
-        if 'N' in [x[1] for x in d["params"] if isinstance(x, str)]:
-            constr = 'Name'
+    # constr = None
+    # for d in template["constraints"]:
+    #     if 'S' in [x[1] for x in d["params"] if isinstance(x, str)]:
+    #         constr = 'Shape'
+    #     if 'N' in [x[1] for x in d["params"] if isinstance(x, str)]:
+    #         constr = 'Name'
 
     while states:
         state = states.pop()
@@ -424,9 +424,18 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                             'inputs': [next_input],
                             'side_inputs': [param_val],
                         })
+                        if param_type == 'Shape':
+                            param_val = param_val + ' thing'
                         cur_next_vals[param_name] = param_val
                         next_input = len(state['nodes']) + len(new_nodes) - 1
                     elif param_val is None:
+                        constr = None
+                        for constraint in template['constraints']:
+                            if param_name in constraint["params"]:
+                                if 'N' in param_name:
+                                    constr = 'Name'
+                                elif 'S' in param_name:
+                                    constr = 'Shape'
                         if metadata['dataset'] == 'CLEVR-v1.0' and param_type == 'Shape':
                             if constr == 'Shape':
                                 param_val = ''
@@ -516,7 +525,6 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                 val = random.choice(synonyms[val])
             text = text.replace(name, val)
             text = ' '.join(text.split())
-        print(text)
         text = adjust_plurals(text, plurals)
         text = replace_optionals(text)
         text = ' '.join(text.split())

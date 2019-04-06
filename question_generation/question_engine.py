@@ -157,7 +157,7 @@ execute_handlers = {
     'filter_objectcategory': make_filter_handler('objectcategory'),
     'filter_name': make_filter_handler('name'),
     'filter_weight': make_filter_handler('weight'),
-    'filter_functionality': make_filter_handler('functionality'),
+    'filter_movability': make_filter_handler('movability'),
     'unique': unique_handler,
     'relate': relate_handler,
     'union': union_handler,
@@ -169,7 +169,7 @@ execute_handlers = {
     'query_size': make_query_handler('size'),
     'query_name': make_query_handler('name'),
     'query_weight': make_query_handler('weight'),
-    'query_functionality': make_query_handler('functionality'),
+    'query_movability': make_query_handler('movability'),
     'exist': exist_handler,
     'equal_color': equal_handler,
     'equal_shape': equal_handler,
@@ -179,7 +179,7 @@ execute_handlers = {
     'equal_object': equal_handler,
     'equal_name': equal_handler,
     'equal_weight': equal_handler,
-    'equal_functionality': equal_handler,
+    'equal_movability': equal_handler,
     'less_than': less_than_handler,
     'greater_than': greater_than_handler,
     'same_color': make_same_attr_handler('color'),
@@ -188,7 +188,7 @@ execute_handlers = {
     'same_material': make_same_attr_handler('material'),
     'same_name': make_same_attr_handler('name'),
     'same_weight': make_same_attr_handler('weight'),
-    'same_functionality': make_same_attr_handler('functionality')
+    'same_movability': make_same_attr_handler('movability')
 }
 
 

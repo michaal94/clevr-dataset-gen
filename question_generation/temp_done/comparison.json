@@ -1,11 +1,11 @@
 [
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "Is the size of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same size as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "Is the size of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same size as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -18,7 +18,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -37,7 +37,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -84,8 +84,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -112,8 +112,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -158,13 +158,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -172,11 +172,11 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "Is the size of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same size as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "Is the size of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same size as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -189,7 +189,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -208,7 +208,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -255,8 +255,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -283,8 +283,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -331,10 +331,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same color?",
-      "Is the color of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same color as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same color?",
+      "Is the color of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same color as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -347,7 +347,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -366,7 +366,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -413,8 +413,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -441,8 +441,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -487,13 +487,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -501,10 +501,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same color?",
-      "Is the color of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same color as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same color?",
+      "Is the color of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same color as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -517,7 +517,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -536,7 +536,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -583,8 +583,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -611,8 +611,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -659,11 +659,11 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same material?",
-      "Are the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> made of the same material?",
-      "Is the material of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same material?",
+      "Are the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> made of the same material?",
+      "Is the material of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -676,7 +676,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -701,7 +701,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -742,8 +742,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -770,8 +770,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -816,13 +816,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -830,11 +830,11 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same material?",
-      "Are the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> made of the same material?",
-      "Is the material of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same material?",
+      "Are the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> made of the same material?",
+      "Is the material of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -847,7 +847,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -872,7 +872,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -913,8 +913,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -941,8 +941,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -989,10 +989,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same shape?",
-      " Does the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the shape of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same shape as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same shape?",
+      " Does the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the shape of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same shape as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1005,7 +1005,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1030,7 +1030,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1071,8 +1071,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1099,8 +1099,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1133,13 +1133,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -1147,10 +1147,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same weight?",
-      " Does the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the weight of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same weight as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same weight?",
+      " Does the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the weight of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same weight as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1163,7 +1163,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1188,7 +1188,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1229,8 +1229,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1257,8 +1257,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1303,13 +1303,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -1317,10 +1317,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same weight?",
-      " Does the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the weight of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same weight as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same weight?",
+      " Does the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the weight of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> the same weight as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1333,7 +1333,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1358,7 +1358,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1399,8 +1399,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1427,8 +1427,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1475,10 +1475,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same functionality?",
-      " Does the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the functionality of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same functionality as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same movability?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the movability of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> of the same movability as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1491,7 +1491,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1504,7 +1504,7 @@
         "inputs": [
           1
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -1516,7 +1516,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1529,14 +1529,14 @@
         "inputs": [
           4
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           2,
           5
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -1557,8 +1557,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1585,8 +1585,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1600,13 +1600,13 @@
     "constraints": [
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
@@ -1633,10 +1633,10 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same functionality?",
-      " Does the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the functionality of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> the same functionality as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same movability?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the movability of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> of the same movability as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1649,7 +1649,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1662,7 +1662,7 @@
         "inputs": [
           1
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -1674,7 +1674,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1687,14 +1687,14 @@
         "inputs": [
           4
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           2,
           5
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -1715,8 +1715,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1743,8 +1743,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1758,13 +1758,13 @@
     "constraints": [
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
@@ -1791,9 +1791,9 @@
   },
   {
     "text": [
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z2> <W2> <C2> <M2> <F2> <S2><N2> belong to the same category?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> belong to the same category as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Is the category of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z2> <W2> <C2> <M2> <V2> <S2><N2> belong to the same category?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Is the category of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -1806,7 +1806,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1831,7 +1831,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1872,8 +1872,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -1900,8 +1900,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -1936,12 +1936,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same size?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the size of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same size?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -1954,7 +1954,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -1970,7 +1970,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -1995,7 +1995,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -2036,8 +2036,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -2068,8 +2068,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -2096,8 +2096,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -2148,19 +2148,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -2168,12 +2168,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same size?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the size of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same size?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -2186,7 +2186,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -2202,7 +2202,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -2227,7 +2227,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -2268,8 +2268,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -2300,8 +2300,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -2328,8 +2328,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -2382,12 +2382,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the size of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -2400,7 +2400,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -2425,7 +2425,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -2441,7 +2441,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -2482,8 +2482,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -2510,8 +2510,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -2542,8 +2542,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -2594,19 +2594,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -2614,12 +2614,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same size?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the size of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same size?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -2632,7 +2632,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -2657,7 +2657,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -2673,7 +2673,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -2714,8 +2714,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -2742,8 +2742,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -2774,8 +2774,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -2828,12 +2828,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same size?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the size of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same size?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -2846,7 +2846,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -2862,7 +2862,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -2887,7 +2887,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -2903,7 +2903,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -2944,8 +2944,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -2976,8 +2976,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -3004,8 +3004,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -3036,8 +3036,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -3094,25 +3094,25 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       }
@@ -3120,12 +3120,12 @@
   },
   {
     "text": [
-      "Is the size of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same size?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its size the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same size as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the size of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same size?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its size the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same size as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -3138,7 +3138,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -3154,7 +3154,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -3179,7 +3179,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -3195,7 +3195,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -3236,8 +3236,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -3268,8 +3268,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -3296,8 +3296,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -3328,8 +3328,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -3388,12 +3388,12 @@
   },
   {
     "text": [
-      "Is the color of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same color?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the color of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same color?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -3406,7 +3406,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -3422,7 +3422,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -3447,7 +3447,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -3488,8 +3488,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -3520,8 +3520,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -3548,8 +3548,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -3597,23 +3597,17 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "Is the color of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same color?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the color of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same color?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -3626,7 +3620,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -3642,7 +3636,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -3667,7 +3661,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -3708,8 +3702,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -3740,8 +3734,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -3768,8 +3762,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -3820,19 +3814,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -3840,12 +3834,12 @@
   },
   {
     "text": [
-      "Is the color of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same color?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the color of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same color?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -3858,7 +3852,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -3883,7 +3877,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -3899,7 +3893,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -3940,8 +3934,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -3968,8 +3962,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -4000,8 +3994,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -4052,19 +4046,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -4072,12 +4066,12 @@
   },
   {
     "text": [
-      "Is the color of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same color?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the color of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same color?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -4090,7 +4084,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -4115,7 +4109,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -4131,7 +4125,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -4172,8 +4166,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -4200,8 +4194,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -4232,8 +4226,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -4286,12 +4280,12 @@
   },
   {
     "text": [
-      "Is the color of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same color?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the color of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same color?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -4304,7 +4298,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -4320,7 +4314,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -4345,7 +4339,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -4361,7 +4355,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -4402,8 +4396,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -4434,8 +4428,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -4462,8 +4456,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -4494,8 +4488,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -4554,12 +4548,12 @@
   },
   {
     "text": [
-      "Is the color of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same color?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its color the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same color as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the color of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same color?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its color the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same color as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -4572,7 +4566,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -4588,7 +4582,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -4613,7 +4607,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -4629,7 +4623,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -4670,8 +4664,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -4702,8 +4696,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -4730,8 +4724,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -4762,8 +4756,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -4820,25 +4814,25 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       }
@@ -4846,11 +4840,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same material?",
-      "Are the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> made of the same material?",
-      "Is the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the material of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same material?",
+      "Are the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> made of the same material?",
+      "Is the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -4863,7 +4857,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -4879,7 +4873,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -4904,7 +4898,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -4945,8 +4939,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -4977,8 +4971,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -5005,8 +4999,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -5057,19 +5051,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -5077,11 +5071,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same material?",
-      "Are the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> made of the same material?",
-      "Is the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the material of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same material?",
+      "Are the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> made of the same material?",
+      "Is the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -5094,7 +5088,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -5110,7 +5104,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -5135,7 +5129,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -5176,8 +5170,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -5208,8 +5202,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -5236,8 +5230,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -5290,11 +5284,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same material?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Are the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> made of the same material?"
+      "Is the material of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same material?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Are the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> made of the same material?"
     ],
     "nodes": [
       {
@@ -5307,7 +5301,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -5332,7 +5326,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -5348,7 +5342,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -5389,8 +5383,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -5417,8 +5411,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -5449,8 +5443,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -5503,11 +5497,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same material?",
-      "Is the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Are the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> made of the same material?"
+      "Is the material of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same material?",
+      "Is the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Are the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> made of the same material?"
     ],
     "nodes": [
       {
@@ -5520,7 +5514,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -5545,7 +5539,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -5561,7 +5555,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -5602,8 +5596,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -5630,8 +5624,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -5662,8 +5656,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -5714,19 +5708,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -5734,11 +5728,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same material?",
-      "Is the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Are the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> made of the same material?"
+      "Is the material of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same material?",
+      "Is the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Are the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> made of the same material?"
     ],
     "nodes": [
       {
@@ -5751,7 +5745,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -5767,7 +5761,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -5792,7 +5786,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -5808,7 +5802,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -5849,8 +5843,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -5881,8 +5875,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -5909,8 +5903,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -5941,8 +5935,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -5999,25 +5993,25 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       }
@@ -6025,11 +6019,11 @@
   },
   {
     "text": [
-      "Is the material of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same material as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same material?",
-      "Is the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> made of the same material as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Are the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> made of the same material?"
+      "Is the material of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same material as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same material?",
+      "Is the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of the same material as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Are the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> made of the same material?"
     ],
     "nodes": [
       {
@@ -6042,7 +6036,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -6058,7 +6052,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -6083,7 +6077,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -6099,7 +6093,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -6140,8 +6134,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -6172,8 +6166,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -6200,8 +6194,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -6232,8 +6226,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -6292,12 +6286,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same shape?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the shape of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same shape?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -6310,7 +6304,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -6326,7 +6320,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -6351,7 +6345,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -6392,8 +6386,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -6424,8 +6418,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -6452,8 +6446,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -6486,13 +6480,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -6504,7 +6498,7 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       }
@@ -6512,12 +6506,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same shape?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the shape of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same shape?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -6530,7 +6524,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -6546,7 +6540,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -6571,7 +6565,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -6612,8 +6606,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -6644,8 +6638,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -6672,8 +6666,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -6706,13 +6700,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -6726,12 +6720,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same shape?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the shape of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same shape?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -6744,7 +6738,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -6769,7 +6763,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -6785,7 +6779,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -6826,8 +6820,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -6854,8 +6848,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -6886,8 +6880,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -6920,13 +6914,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -6938,7 +6932,7 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -6946,12 +6940,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same shape?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the shape of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same shape?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -6964,7 +6958,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -6989,7 +6983,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -7005,7 +6999,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -7046,8 +7040,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -7074,8 +7068,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -7106,8 +7100,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -7140,13 +7134,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -7160,12 +7154,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same shape?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the shape of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same shape?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -7178,7 +7172,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -7194,7 +7188,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -7219,7 +7213,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -7235,7 +7229,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -7276,8 +7270,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -7308,8 +7302,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -7336,8 +7330,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -7368,8 +7362,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -7402,13 +7396,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       },
@@ -7420,7 +7414,7 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
@@ -7432,7 +7426,7 @@
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -7440,12 +7434,12 @@
   },
   {
     "text": [
-      "Is the shape of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same shape?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its shape the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same shape as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the shape of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same shape?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its shape the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same shape as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -7458,7 +7452,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -7474,7 +7468,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -7499,7 +7493,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -7515,7 +7509,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -7556,8 +7550,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -7588,8 +7582,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -7616,8 +7610,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -7648,8 +7642,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -7682,13 +7676,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       },
@@ -7708,12 +7702,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same weight?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the weight of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same weight?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -7726,7 +7720,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -7742,7 +7736,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -7767,7 +7761,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -7808,8 +7802,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -7840,8 +7834,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -7868,8 +7862,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -7920,19 +7914,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -7940,12 +7934,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same weight?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the weight of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same weight?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -7958,7 +7952,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -7974,7 +7968,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -7999,7 +7993,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -8040,8 +8034,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -8072,8 +8066,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -8100,8 +8094,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -8154,12 +8148,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same weight?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the weight of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same weight?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -8172,7 +8166,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -8197,7 +8191,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -8213,7 +8207,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -8254,8 +8248,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -8282,8 +8276,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -8314,8 +8308,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -8368,12 +8362,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same weight?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the weight of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same weight?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -8386,7 +8380,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -8411,7 +8405,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -8427,7 +8421,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -8468,8 +8462,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -8496,8 +8490,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -8528,8 +8522,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -8580,19 +8574,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -8600,12 +8594,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same weight?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the weight of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same weight?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -8618,7 +8612,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -8634,7 +8628,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -8659,7 +8653,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -8675,7 +8669,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -8716,8 +8710,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -8748,8 +8742,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -8776,8 +8770,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -8808,8 +8802,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -8866,25 +8860,25 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       }
@@ -8892,12 +8886,12 @@
   },
   {
     "text": [
-      "Is the weight of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same weight?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its weight the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same weight as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the weight of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same weight?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its weight the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it the same weight as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -8910,7 +8904,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -8926,7 +8920,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -8951,7 +8945,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -8967,7 +8961,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -9008,8 +9002,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -9040,8 +9034,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -9068,8 +9062,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -9100,8 +9094,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -9160,12 +9154,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same functionality?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the movability of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same movability?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -9178,7 +9172,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -9194,7 +9188,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -9207,7 +9201,7 @@
         "inputs": [
           2
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -9219,7 +9213,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -9232,14 +9226,14 @@
         "inputs": [
           5
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           3,
           6
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -9260,8 +9254,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -9292,8 +9286,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -9320,8 +9314,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -9342,13 +9336,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -9374,12 +9368,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same functionality?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the movability of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same movability?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -9392,7 +9386,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -9405,7 +9399,7 @@
         "inputs": [
           1
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -9417,7 +9411,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -9433,7 +9427,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -9446,14 +9440,14 @@
         "inputs": [
           5
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           2,
           6
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -9474,8 +9468,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -9502,8 +9496,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -9534,8 +9528,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -9556,13 +9550,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -9588,12 +9582,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same functionality?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the movability of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same movability?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -9606,7 +9600,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -9622,7 +9616,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -9635,7 +9629,7 @@
         "inputs": [
           2
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -9647,7 +9641,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -9663,7 +9657,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -9676,14 +9670,14 @@
         "inputs": [
           6
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           3,
           7
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -9704,8 +9698,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -9736,8 +9730,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -9764,8 +9758,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -9796,8 +9790,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -9818,13 +9812,13 @@
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       },
@@ -9856,12 +9850,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same functionality?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the movability of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same movability?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -9874,7 +9868,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -9890,7 +9884,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -9903,7 +9897,7 @@
         "inputs": [
           2
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -9915,7 +9909,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -9928,14 +9922,14 @@
         "inputs": [
           5
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           3,
           6
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -9956,8 +9950,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -9988,8 +9982,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -10016,8 +10010,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -10035,18 +10029,6 @@
           5
         ],
         "type": "OUT_NEQ"
-      },
-      {
-        "params": [
-          "<F2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<F3>"
-        ],
-        "type": "NULL"
       },
       {
         "params": [
@@ -10068,19 +10050,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -10088,12 +10070,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z> <W> <C> <M> <F> <S><N> the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Does the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "Do the <Z> <W> <C> <M> <F> <S><N> and the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2> have the same functionality?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?",
-      "There is a <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z3> <W3> <C3> <M3> <F3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <F2> <S2><N2>?"
+      "Is the movability of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> have the same movability?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
     ],
     "nodes": [
       {
@@ -10106,7 +10088,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -10119,7 +10101,7 @@
         "inputs": [
           1
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -10131,7 +10113,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -10147,7 +10129,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -10160,14 +10142,14 @@
         "inputs": [
           5
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           2,
           6
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -10188,8 +10170,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -10216,8 +10198,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -10248,8 +10230,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -10270,18 +10252,6 @@
       },
       {
         "params": [
-          "<F>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<F3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<S>"
         ],
         "type": "NULL"
@@ -10300,19 +10270,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -10320,12 +10290,12 @@
   },
   {
     "text": [
-      "Is the functionality of the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Does the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> have the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "Do the <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N> and the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3> have the same functionality?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; does it have the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is its functionality the same as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?",
-      "There is a <Z2> <W2> <C2> <M2> <F2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <F> <S><N>; is it the same functionality as the <Z4> <W4> <C4> <M4> <F4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <F3> <S3><N3>?"
+      "Is the movability of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> have the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> have the same movability?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it have the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is its movability the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is it of the same movability as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
     ],
     "nodes": [
       {
@@ -10338,7 +10308,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -10354,7 +10324,7 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
@@ -10367,7 +10337,7 @@
         "inputs": [
           2
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [],
@@ -10379,7 +10349,7 @@
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
         ],
@@ -10395,7 +10365,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
         ],
@@ -10408,14 +10378,14 @@
         "inputs": [
           6
         ],
-        "type": "query_functionality"
+        "type": "query_movability"
       },
       {
         "inputs": [
           3,
           7
         ],
-        "type": "equal_functionality"
+        "type": "equal_movability"
       }
     ],
     "params": [
@@ -10436,8 +10406,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -10468,8 +10438,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -10496,8 +10466,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -10528,8 +10498,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",
@@ -10547,18 +10517,6 @@
           6
         ],
         "type": "OUT_NEQ"
-      },
-      {
-        "params": [
-          "<F2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<F4>"
-        ],
-        "type": "NULL"
       },
       {
         "params": [
@@ -10586,25 +10544,1357 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> belong to the same category?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> belong to the same category?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> belong to the same category?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_movability"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<W4>",
+          "<C4>",
+          "<M4>",
+          "<V4>",
+          "<S4>",
+          "<N4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_movability"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_movability"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      },
+      {
+        "type": "Name",
+        "name": "<N4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N4>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> belong to the same category?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z> <W> <C> <M> <V> <S><N> the same as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Does the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?",
+      "Do the <Z> <W> <C> <M> <V> <S><N> and the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> belong to the same category?",
+      "There is a <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R> the <Z2> <W2> <C2> <M2> <V2> <S2><N2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_name"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the category of the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> the same as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Does the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to the same category as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?",
+      "Do the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> and the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> belong to the same category?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; does it belong to the same category as the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R2> the <Z3> <W3> <C3> <M3> <V3> <S3><N3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_movability"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<W4>",
+          "<C4>",
+          "<M4>",
+          "<V4>",
+          "<S4>",
+          "<N4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_movability"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_movability"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      },
+      {
+        "type": "Name",
+        "name": "<N4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N4>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V3>"
         ],
         "type": "NULL"
       }

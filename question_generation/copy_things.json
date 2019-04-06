@@ -3,23 +3,23 @@
           "<W2>",
           "<C2>",
           "<M2>",
-          "<F2>",
+          "<V2>",
           "<S2>",
           "<N2>"
         ],
 
 
-<Z> <W> <C> <M> <F> <S><N>
-<Z2> <W2> <C2> <M2> <F2> <S2><N2>
-<Z3> <W3> <C3> <M3> <F3> <S3><N3>
-<Z4> <W4> <C4> <M4> <F4> <S4><N4>
+<Z> <W> <C> <M> <V> <S><N>
+<Z2> <W2> <C2> <M2> <V2> <S2><N2>
+<Z3> <W3> <C3> <M3> <V3> <S3><N3>
+<Z4> <W4> <C4> <M4> <V4> <S4><N4>
 
 
           "<Z3>",
           "<W3>",
           "<C3>",
           "<M3>",
-          "<F3>",
+          "<V3>",
           "<S3>",
           "<N3>"
 
@@ -28,7 +28,7 @@
           "<W4>",
           "<C4>",
           "<M4>",
-          "<F4>",
+          "<V4>",
           "<S4>",
           "<N4>"
 
@@ -38,7 +38,7 @@
           "<W>",
           "<C>",
           "<M>",
-          "<F>",
+          "<V>",
           "<S>",
           "<N>"
         ],
@@ -70,6 +70,19 @@
       }
 
 
+,
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      }
 
 
 ,
@@ -87,13 +100,13 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       }
@@ -120,19 +133,19 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -164,25 +177,25 @@
       },
       {
         "params": [
-          "<F>"
+          "<V>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F2>"
+          "<V2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F3>"
+          "<V3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<F4>"
+          "<V4>"
         ],
         "type": "NULL"
       }
@@ -215,8 +228,8 @@
         "name": "<M>"
       },
       {
-        "type": "Functionality",
-        "name": "<F>"
+        "type": "Movability",
+        "name": "<V>"
       },
       {
         "type": "Shape",
@@ -245,8 +258,8 @@
         "name": "<M2>"
       },
       {
-        "type": "Functionality",
-        "name": "<F2>"
+        "type": "Movability",
+        "name": "<V2>"
       },
       {
         "type": "Shape",
@@ -276,8 +289,8 @@
         "name": "<M3>"
       },
       {
-        "type": "Functionality",
-        "name": "<F3>"
+        "type": "Movability",
+        "name": "<V3>"
       },
       {
         "type": "Shape",
@@ -310,8 +323,8 @@
         "name": "<M4>"
       },
       {
-        "type": "Functionality",
-        "name": "<F4>"
+        "type": "Movability",
+        "name": "<V4>"
       },
       {
         "type": "Shape",

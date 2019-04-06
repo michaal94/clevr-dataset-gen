@@ -6,7 +6,7 @@
     "Integer": null,
     "Bool": null,
     "Shape": [
-      "cuboid", "irregularly shaped object", "hemisphere", "cylindrical object", "long thin object"
+      "cuboid", "irregularly shaped", "hemisphere", "cylindrical", "long and thin shaped"
     ],
     "Color": [
       "gray", "red", "blue", "green", "brown", "purple", "cyan", "yellow", "white", "metallic", "transparent", "black"
@@ -26,7 +26,7 @@
     "Weight": [
       "light", "heavy", "medium-weight"
     ],
-    "Functionality": [
+    "Movability": [
       "portable", "movable"
     ]
   },
@@ -52,9 +52,9 @@
       "terminal": false
     },
     {
-      "name": "filter_functionality",
+      "name": "filter_movability",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Functionality"],
+      "side_inputs": ["Movability"],
       "output": "ObjectSet",
       "terminal": false
     },
@@ -131,9 +131,9 @@
       "terminal": true
     },
     {
-      "name": "query_functionality",
+      "name": "query_movability",
       "inputs": ["Object"],
-      "output": "Functionality",
+      "output": "Movability",
       "terminal": true
     },
     {
@@ -179,8 +179,8 @@
       "terminal": true
     },
     {
-      "name": "equal_functionality",
-      "inputs": ["Functionality", "Functionality"],
+      "name": "equal_movability",
+      "inputs": ["Movability", "Movability"],
       "output": "Bool",
       "terminal": true
     },
@@ -263,7 +263,7 @@
       "terminal": false
     },
     {
-      "name": "same_functionality",
+      "name": "same_movability",
       "inputs": ["Object"],
       "output": "ObjectSet",
       "terminal": false
@@ -277,7 +277,7 @@
     {
       "name": "filter",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "ObjectSet",
       "terminal": false,
       "template_only": true
@@ -285,7 +285,7 @@
     {
       "name": "filter_unique",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Object",
       "terminal": false,
       "template_only": true
@@ -293,7 +293,7 @@
     {
       "name": "filter_count",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Integer",
       "terminal": true,
       "template_only": true
@@ -301,7 +301,7 @@
     {
       "name": "filter_exist",
       "inputs": ["ObjectSet"],
-      "side_inputs": ["Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Bool",
       "terminal": true,
       "template_only": true
@@ -309,7 +309,7 @@
     {
       "name": "relate_filter",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "ObjectSet",
       "terminal": false,
       "template_only": true
@@ -317,7 +317,7 @@
     {
       "name": "relate_filter_unique",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Object",
       "terminal": false,
       "template_only": true
@@ -325,7 +325,7 @@
     {
       "name": "relate_filter_count",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Integer",
       "terminal": false,
       "template_only": true
@@ -333,7 +333,7 @@
     {
       "name": "relate_filter_exist",
       "inputs": ["Object"],
-      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Functionality", "Shape", "Name"],
+      "side_inputs": ["Relation", "Size", "Weight", "Color", "Material", "Movability", "Shape", "Name"],
       "output": "Bool",
       "terminal": false,
       "template_only": true
