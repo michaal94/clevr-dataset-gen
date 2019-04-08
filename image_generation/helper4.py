@@ -56,7 +56,7 @@ for i in range(len(shapes_list)):
         'size2': size2,
         # 'size_change': size_change,
         'weight': weight,
-        'movement': movement,
+        'movability': movement,
         'shape': shape
     }
 

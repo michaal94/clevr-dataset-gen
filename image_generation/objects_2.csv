@@ -1,47 +1,47 @@
 Object name,Material change,Material 1 (default),Material 2,Color1 change,Color2 change,Colors - material 1,Colors - material 2,Weight,Movability,Size change,Size 1,Size 2,Shape
-Baking tray 1,TRUE,Metal,-,FALSE,FALSE,gray,-,light,portable,TRUE,large,-,flat
+Baking tray 1,FALSE,Metal,-,FALSE,FALSE,gray,-,light,portable,FALSE,large,-,flat
 Baking tray 2,TRUE,Metal,Rubber,FALSE,TRUE,gray,all rubber,light,portable,TRUE,large,medium-sized,flat
-Blender 1,TRUE,Plastic,-,FALSE,FALSE,brown,-,heavy,movable,TRUE,large,-,irregularly shaped
-Blender 2,TRUE,Plastic,-,TRUE,FALSE,all plastic + transparent,-,heavy,movable,TRUE,large,-,cylindrical
-Bowl 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,medium-weight,portable,TRUE,medium-sized,-,hemisphere
-Bowl 2,TRUE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,portable,TRUE,medium-sized,small,hemisphere
-Bowl 3,TRUE,Ceramic,Plastic,FALSE,TRUE,brown,all plastic,medium-weight,portable,TRUE,medium-sized,-,hemisphere
-Chopping board 1,TRUE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,TRUE,large,medium-sized,cuboid
-Chopping board 2,TRUE,Plastic,Rubber,TRUE,TRUE,all plastic,all rubber,light,portable,TRUE,large,-,cuboid
-Chopping board 3,TRUE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,TRUE,large,-,irregularly shaped
-Coffee maker 1,TRUE,Plastic,-,FALSE,FALSE,black,-,heavy,movable,TRUE,large,-,cylindrical object
-Coffee maker 2,TRUE,Plastic,-,FALSE,FALSE,white,-,heavy,movable,TRUE,large,-,irregularly shaped
-Food box 1,TRUE,Plastic,-,FALSE,FALSE,white,-,light,portable,TRUE,medium-sized,-,irregularly shaped
-Food box 2,TRUE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,light,portable,TRUE,medium-sized,small,cylindrical object
-Fork 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,TRUE,small,-,long and thin shaped
-Fork 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,light,portable,TRUE,small,-,long and thin shaped
-Glass 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,light,portable,TRUE,medium-sized,-,cylindrical
-Glass 2,TRUE,Glass,-,FALSE,FALSE,transparent,-,light,portable,TRUE,medium-sized,-,cylindrical
+Blender 1,FALSE,Plastic,-,FALSE,FALSE,brown,-,heavy,movable,FALSE,large,-,irregularly shaped
+Blender 2,FALSE,Plastic,-,TRUE,FALSE,all plastic + transparent,-,heavy,movable,FALSE,large,-,cylindrical
+Bowl 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,medium-weight,portable,FALSE,medium-sized,-,hemisphere
+Bowl 2,FALSE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,portable,TRUE,medium-sized,small,hemisphere
+Bowl 3,TRUE,Ceramic,Plastic,FALSE,TRUE,brown,all plastic,medium-weight,portable,FALSE,medium-sized,-,hemisphere
+Chopping board 1,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,TRUE,large,medium-sized,cuboid
+Chopping board 2,TRUE,Plastic,Rubber,TRUE,TRUE,all plastic,all rubber,light,portable,FALSE,large,-,cuboid
+Chopping board 3,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,FALSE,large,-,irregularly shaped
+Coffee maker 1,FALSE,Plastic,-,FALSE,FALSE,black,-,heavy,movable,FALSE,large,-,cylindrical object
+Coffee maker 2,FALSE,Plastic,-,FALSE,FALSE,white,-,heavy,movable,FALSE,large,-,irregularly shaped
+Food box 1,FALSE,Plastic,-,FALSE,FALSE,white,-,light,portable,FALSE,medium-sized,-,irregularly shaped
+Food box 2,FALSE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,light,portable,TRUE,medium-sized,small,cylindrical object
+Fork 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,FALSE,small,-,long and thin shaped
+Fork 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,portable,FALSE,small,-,long and thin shaped
+Glass 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,cylindrical
+Glass 2,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,cylindrical
 Glass 3,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,portable,TRUE,medium-sized,small,cylindrical
-Glass 4,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,portable,TRUE,medium-sized,-,cylindrical
-Glass 5,TRUE,Glass,-,FALSE,FALSE,transparent,-,light,portable,TRUE,medium-sized,-,cuboid
-Kettle 1,TRUE,Metal,-,TRUE,FALSE,all like plastic,-,heavy,movable,TRUE,large,-,irregularly shaped
-Kettle 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,heavy,movable,TRUE,large,-,irregularly shaped
-Knife 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,TRUE,small,-,long and thin shaped
-Knife 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,light,portable,TRUE,small,-,long and thin shaped
-Mug 1,TRUE,Ceramic,-,TRUE,FALSE,all like plastic,-,medium-weight,portable,TRUE,medium-sized,small,cylindrical
-Mug 2,TRUE,Ceramic,-,FALSE,FALSE,black,-,medium-weight,portable,TRUE,medium-sized,-,cylindrical
-Mug 3,TRUE,Ceramic,-,FALSE,FALSE,red,-,medium-weight,portable,TRUE,medium-sized,-,cylindrical
-Pan 1,TRUE,Metal,-,FALSE,FALSE,black,-,heavy,portable,TRUE,large,-,irregularly shaped
-Pan 2,TRUE,Metal,-,FALSE,FALSE,brown,-,medium-weight,portable,TRUE,large,-,irregularly shaped
-Plate 1,TRUE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,portable,TRUE,medium-sized,-,flat
-Plate 2,TRUE,Ceramic,-,TRUE,FALSE,all rubber,-,medium-weight,portable,TRUE,medium-sized,small,flat
-Pot 1,TRUE,Metal,-,FALSE,FALSE,metalllic,-,heavy,portable,TRUE,large,medium-sized,cylindrical
-Pot 2,TRUE,Metal,-,FALSE,FALSE,black,-,heavy,portable,TRUE,large,-,irregularly shaped
-Scissors 1,TRUE,Metal,-,FALSE,FALSE,black,-,light,portable,TRUE,small,-,irregularly shaped
-Scissors 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,light,portable,TRUE,small,-,irregularly shaped
-Soda can,TRUE,Metal,-,TRUE,FALSE,all plastic,-,light,portable,TRUE,medium-sized,-,cylindrical
-Spoon 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,TRUE,small,-,long and thin shaped
-Spoon 2,TRUE,Metal,-,FALSE,FALSE,metallic,-,light,portable,TRUE,small,-,long and thin shaped
-Thermos 1,TRUE,Metal,-,TRUE,FALSE,all rubber,-,medium-weight,portable,TRUE,medium-sized,-,cylindrical
-Thermos 2,TRUE,Plastic,Metal,TRUE,FALSE,all pllastic,metallic,light,portable,TRUE,medium-sized,-,cylindrical
-Toaster 1,TRUE,Metal,-,FALSE,FALSE,metallic,-,heavy,movable,TRUE,large,-,cuboid
-Toaster 2,TRUE,Metal,-,FALSE,FALSE,red,-,heavy,movable,TRUE,large,-,cuboid
-Wine glass 1,TRUE,Glass,-,FALSE,FALSE,transparent,-,light,portable,TRUE,medium-sized,-,irregularly shaped
-Wine glass 2,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,portable,TRUE,medium-sized,-,irregularly shaped
-Wine glass 3,TRUE,Glass,-,FALSE,FALSE,transparent,-,light,portable,TRUE,medium-sized,-,irregularly shaped
+Glass 4,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,portable,FALSE,medium-sized,-,cylindrical
+Glass 5,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,cuboid
+Kettle 1,FALSE,Metal,-,TRUE,FALSE,all like plastic,-,heavy,movable,FALSE,large,-,irregularly shaped
+Kettle 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,heavy,movable,FALSE,large,-,irregularly shaped
+Knife 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,FALSE,small,-,long and thin shaped
+Knife 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,portable,FALSE,small,-,long and thin shaped
+Mug 1,FALSE,Ceramic,-,TRUE,FALSE,all like plastic,-,medium-weight,portable,TRUE,medium-sized,small,cylindrical
+Mug 2,FALSE,Ceramic,-,FALSE,FALSE,black,-,medium-weight,portable,FALSE,medium-sized,-,cylindrical
+Mug 3,FALSE,Ceramic,-,FALSE,FALSE,red,-,medium-weight,portable,FALSE,medium-sized,-,cylindrical
+Pan 1,FALSE,Metal,-,FALSE,FALSE,black,-,heavy,portable,FALSE,large,-,irregularly shaped
+Pan 2,FALSE,Metal,-,FALSE,FALSE,brown,-,medium-weight,portable,FALSE,large,-,irregularly shaped
+Plate 1,FALSE,Ceramic,-,FALSE,FALSE,white,-,medium-weight,portable,FALSE,medium-sized,-,flat
+Plate 2,FALSE,Ceramic,-,TRUE,FALSE,all rubber,-,medium-weight,portable,TRUE,medium-sized,small,flat
+Pot 1,FALSE,Metal,-,FALSE,FALSE,metalllic,-,heavy,portable,TRUE,large,medium-sized,cylindrical
+Pot 2,FALSE,Metal,-,FALSE,FALSE,black,-,heavy,portable,FALSE,large,-,irregularly shaped
+Scissors 1,FALSE,Metal,-,FALSE,FALSE,black,-,light,portable,FALSE,small,-,irregularly shaped
+Scissors 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,portable,FALSE,small,-,irregularly shaped
+Soda can,FALSE,Metal,-,TRUE,FALSE,all plastic,-,light,portable,FALSE,medium-sized,-,cylindrical
+Spoon 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,FALSE,small,-,long and thin shaped
+Spoon 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,portable,FALSE,small,-,long and thin shaped
+Thermos 1,FALSE,Metal,-,TRUE,FALSE,all rubber,-,medium-weight,portable,FALSE,medium-sized,-,cylindrical
+Thermos 2,TRUE,Plastic,Metal,TRUE,FALSE,all pllastic,metallic,light,portable,FALSE,medium-sized,-,cylindrical
+Toaster 1,FALSE,Metal,-,FALSE,FALSE,metallic,-,heavy,movable,FALSE,large,-,cuboid
+Toaster 2,FALSE,Metal,-,FALSE,FALSE,red,-,heavy,movable,FALSE,large,-,cuboid
+Wine glass 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,irregularly shaped
+Wine glass 2,TRUE,Glass,Plastic,FALSE,TRUE,transparent,all plastic,light,portable,FALSE,medium-sized,-,irregularly shaped
+Wine glass 3,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,irregularly shaped
