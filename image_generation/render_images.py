@@ -558,7 +558,7 @@ def add_random_objects(scene_struct, num_objects, args, camera):
         obj_name_out = object_properties[obj_name]['name']
 
         weight = object_properties[obj_name]['weight']
-        movement = object_properties[obj_name]['movement']
+        movability = object_properties[obj_name]['movability']
         shape = object_properties[obj_name]['shape']
 
         objects.append({
@@ -571,7 +571,7 @@ def add_random_objects(scene_struct, num_objects, args, camera):
             'pixel_coords': pixel_coords,
             'color': color_name,
             'weight': weight,
-            'movement': movement
+            'movability': movability
         })
 
     # Check that all objects are at least partially visible in the rendered image

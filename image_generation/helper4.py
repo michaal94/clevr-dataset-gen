@@ -38,7 +38,7 @@ for i in range(len(shapes_list)):
     print(obj_color1, obj_color2)
     obj_change_size = df[df['Object name'] == obj_name_df]['Size change'].item()
     weight = df[df['Object name'] == obj_name_df]['Weight'].item().lower()
-    movement = df[df['Object name'] == obj_name_df]['Movement'].item().lower()
+    movement = df[df['Object name'] == obj_name_df]['Movability'].item().lower()
     shape = df[df['Object name'] == obj_name_df]['Shape'].item().lower()
     size1 = df[df['Object name'] == obj_name_df]['Size 1'].item().lower()
     size2 = df[df['Object name'] == obj_name_df]['Size 2'].item().lower()

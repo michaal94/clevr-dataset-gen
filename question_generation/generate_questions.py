@@ -424,9 +424,11 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                             'inputs': [next_input],
                             'side_inputs': [param_val],
                         })
+                        # print(param_type, param_val)
                         if param_type == 'Shape':
                             param_val = param_val + ' thing'
                         cur_next_vals[param_name] = param_val
+                        # print(cur_next_vals)
                         next_input = len(state['nodes']) + len(new_nodes) - 1
                     elif param_val is None:
                         constr = None
@@ -492,8 +494,9 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                     'side_inputs': [val],
                 }
                 cur_next_vals = {k: v for k, v in state['vals'].items()}
+                if param_type == 'Shape':
+                    val = val + ' thing'
                 cur_next_vals[param_name] = val
-
                 states.append({
                     'nodes': state['nodes'] + [cur_next_node],
                     'vals': cur_next_vals,
