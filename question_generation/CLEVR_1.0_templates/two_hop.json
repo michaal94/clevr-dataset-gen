@@ -1,10 +1,10 @@
 [
   {
     "text": [
-      "How many <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What number of <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how many <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> it?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what number of <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> it?"
+      "How many <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What number of <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how many <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> it?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what number of <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> it?"
     ],
     "nodes": [
       {
@@ -55,22 +55,6 @@
         ],
         "inputs": [
           2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
         ],
         "type": "relate_filter_count"
       }
@@ -167,38 +151,6 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
@@ -222,12 +174,6 @@
       },
       {
         "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<V>"
         ],
         "type": "NULL"
@@ -243,21 +189,15 @@
           "<V3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "How many <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What number of <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how many <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> it?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what number of <Z4> <W4> <C4> <M4> <V4> <S4><N4>s are <R3> it?"
+      "How many <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What number of <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how many <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> it?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what number of <Z3> <W3> <C3> <M3> <V3> <S3><N3>s are <R2> it?"
     ],
     "nodes": [
       {
@@ -308,22 +248,6 @@
         ],
         "inputs": [
           2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
         ],
         "type": "relate_filter_count"
       }
@@ -420,38 +344,6 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
@@ -472,21 +364,15 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "Are there any <Z4> <W4> <C4> <M4> <V4> <S4><N4>s [that are] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "Is there a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; are there any <Z4> <W4> <C4> <M4> <V4> <S4><N4>s [that are] <R3> it?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is there a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> it?"
+      "Are there any <Z3> <W3> <C3> <M3> <V3> <S3><N3>s [that are] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; are there any <Z3> <W3> <C3> <M3> <V3> <S3><N3>s [that are] <R2> it?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is there a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> it?"
     ],
     "nodes": [
       {
@@ -537,22 +423,6 @@
         ],
         "inputs": [
           2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
         ],
         "type": "relate_filter_exist"
       }
@@ -649,38 +519,6 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
@@ -701,21 +539,15 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "Are there any <Z4> <W4> <C4> <M4> <V4> <S4><N4>s [that are] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "Is there a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; are there any <Z4> <W4> <C4> <M4> <V4> <S4><N4>s [that are] <R3> it?",
-      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is there a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> it?"
+      "Are there any <Z3> <W3> <C3> <M3> <V3> <S3><N3>s [that are] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; are there any <Z3> <W3> <C3> <M3> <V3> <S3><N3>s [that are] <R2> it?",
+      "There is a <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; is there a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> it?"
     ],
     "nodes": [
       {
@@ -766,22 +598,6 @@
         ],
         "inputs": [
           2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
         ],
         "type": "relate_filter_exist"
       }
@@ -878,38 +694,6 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
@@ -933,12 +717,6 @@
       },
       {
         "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<V>"
         ],
         "type": "NULL"
@@ -954,23 +732,17 @@
           "<V3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What size is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the size of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "How big is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its size?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how big is it?"
+      "What size is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "How big is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its size?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how big is it?"
     ],
     "nodes": [
       {
@@ -1025,24 +797,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_size"
       }
@@ -1139,44 +895,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<Z4>"
+          "<Z3>"
         ],
         "type": "NULL"
       },
@@ -1200,12 +924,6 @@
       },
       {
         "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<V>"
         ],
         "type": "NULL"
@@ -1221,23 +939,17 @@
           "<V3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What size is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the size of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "How big is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its size?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how big is it?"
+      "What size is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "How big is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its size?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; how big is it?"
     ],
     "nodes": [
       {
@@ -1292,24 +1004,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_size"
       }
@@ -1406,44 +1102,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<Z4>"
+          "<Z3>"
         ],
         "type": "NULL"
       },
@@ -1464,22 +1128,16 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What shape is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the shape of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what shape?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+      "What color is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the color of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
     ],
     "nodes": [
       {
@@ -1534,526 +1192,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
-        ],
-        "type": "query_shape"
-      }
-    ],
-    "params": [
-      {
-        "type": "Size",
-        "name": "<Z>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W>"
-      },
-      {
-        "type": "Color",
-        "name": "<C>"
-      },
-      {
-        "type": "Material",
-        "name": "<M>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S>"
-      },
-      {
-        "type": "Name",
-        "name": "<N>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z2>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W2>"
-      },
-      {
-        "type": "Color",
-        "name": "<C2>"
-      },
-      {
-        "type": "Material",
-        "name": "<M2>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V2>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S2>"
-      },
-      {
-        "type": "Name",
-        "name": "<N2>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R2>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z3>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W3>"
-      },
-      {
-        "type": "Color",
-        "name": "<C3>"
-      },
-      {
-        "type": "Material",
-        "name": "<M3>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V3>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S3>"
-      },
-      {
-        "type": "Name",
-        "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
-      }
-    ],
-    "constraints": [
-      {
-        "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<N>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<N2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<N3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
-      }
-    ]
-  },
-  {
-    "text": [
-      "What shape is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the shape of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what shape?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
-    ],
-    "nodes": [
-      {
-        "inputs": [],
-        "type": "scene"
-      },
-      {
-        "side_inputs": [
-          "<Z>",
-          "<W>",
-          "<C>",
-          "<M>",
-          "<V>",
-          "<S>",
-          "<N>"
-        ],
-        "inputs": [
-          0
-        ],
-        "type": "filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R>",
-          "<Z2>",
-          "<W2>",
-          "<C2>",
-          "<M2>",
-          "<V2>",
-          "<S2>",
-          "<N2>"
-        ],
-        "inputs": [
-          1
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R2>",
-          "<Z3>",
-          "<W3>",
-          "<C3>",
-          "<M3>",
-          "<V3>",
-          "<S3>",
-          "<N3>"
-        ],
-        "inputs": [
-          2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
-        ],
-        "type": "query_shape"
-      }
-    ],
-    "params": [
-      {
-        "type": "Size",
-        "name": "<Z>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W>"
-      },
-      {
-        "type": "Color",
-        "name": "<C>"
-      },
-      {
-        "type": "Material",
-        "name": "<M>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S>"
-      },
-      {
-        "type": "Name",
-        "name": "<N>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z2>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W2>"
-      },
-      {
-        "type": "Color",
-        "name": "<C2>"
-      },
-      {
-        "type": "Material",
-        "name": "<M2>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V2>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S2>"
-      },
-      {
-        "type": "Name",
-        "name": "<N2>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R2>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z3>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W3>"
-      },
-      {
-        "type": "Color",
-        "name": "<C3>"
-      },
-      {
-        "type": "Material",
-        "name": "<M3>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V3>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S3>"
-      },
-      {
-        "type": "Name",
-        "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
-      }
-    ],
-    "constraints": [
-      {
-        "params": [
-          "<S>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
-      }
-    ]
-  },
-  {
-    "text": [
-      "What color is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the color of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what color?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
-    ],
-    "nodes": [
-      {
-        "inputs": [],
-        "type": "scene"
-      },
-      {
-        "side_inputs": [
-          "<Z>",
-          "<W>",
-          "<C>",
-          "<M>",
-          "<V>",
-          "<S>",
-          "<N>"
-        ],
-        "inputs": [
-          0
-        ],
-        "type": "filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R>",
-          "<Z2>",
-          "<W2>",
-          "<C2>",
-          "<M2>",
-          "<V2>",
-          "<S2>",
-          "<N2>"
-        ],
-        "inputs": [
-          1
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R2>",
-          "<Z3>",
-          "<W3>",
-          "<C3>",
-          "<M3>",
-          "<V3>",
-          "<S3>",
-          "<N3>"
-        ],
-        "inputs": [
-          2
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
-        "inputs": [
-          3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_color"
       }
@@ -2150,92 +1290,30 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<C4>"
+          "<C3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S>"
+          "<N>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S2>"
+          "<N2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
+          "<N3>"
         ],
         "type": "NULL"
       }
@@ -2243,11 +1321,11 @@
   },
   {
     "text": [
-      "What color is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the color of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what color?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
+      "What color is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the color of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
     ],
     "nodes": [
       {
@@ -2302,24 +1380,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_color"
       }
@@ -2416,68 +1478,48 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<C4>"
+          "<C3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N>"
+          "<S>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N2>"
+          "<S2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N3>"
+          "<S3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N4>"
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -2485,12 +1527,12 @@
   },
   {
     "text": [
-      "What material is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the material of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is made of what material?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is it made of?",
-      "What [material] is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of?"
+      "What material is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is made of what material?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is it made of?",
+      "What [material] is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of?"
     ],
     "nodes": [
       {
@@ -2545,24 +1587,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_material"
       }
@@ -2659,68 +1685,48 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<M4>"
+          "<M3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N>"
+          "<S>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N2>"
+          "<S2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N3>"
+          "<S3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<N4>"
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V3>"
         ],
         "type": "NULL"
       }
@@ -2728,12 +1734,12 @@
   },
   {
     "text": [
-      "What material is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the material of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is made of what material?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is it made of?",
-      "What [material] is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of?"
+      "What material is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is made of what material?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is it made of?",
+      "What [material] is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> made of?"
     ],
     "nodes": [
       {
@@ -2788,24 +1794,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_material"
       }
@@ -2902,92 +1892,30 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<M4>"
+          "<M3>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S>"
+          "<N>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S2>"
+          "<N2>"
         ],
         "type": "NULL"
       },
       {
         "params": [
-          "<S3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
+          "<N3>"
         ],
         "type": "NULL"
       }
@@ -2995,11 +1923,11 @@
   },
   {
     "text": [
-      "What weight is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the weight of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+      "What shape is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
     ],
     "nodes": [
       {
@@ -3054,24 +1982,396 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What shape is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          2
         ],
         "type": "relate_filter_unique"
       },
       {
         "inputs": [
-          4
+          3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Name",
+        "name": "<N3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What weight is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the weight of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z3>",
+          "<W3>",
+          "<C3>",
+          "<M3>",
+          "<V3>",
+          "<S3>",
+          "<N3>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          3
         ],
         "type": "query_weight"
       }
@@ -3168,44 +2468,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<W4>"
+          "<W3>"
         ],
         "type": "NULL"
       },
@@ -3229,12 +2497,6 @@
       },
       {
         "params": [
-          "<S4>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<V>"
         ],
         "type": "NULL"
@@ -3250,22 +2512,16 @@
           "<V3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What movability is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> of?",
-      "What is the movability of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
+      "What movability is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the movability of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
     ],
     "nodes": [
       {
@@ -3320,24 +2576,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_movability"
       }
@@ -3434,47 +2674,9 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
-      {
-        "params": [
-          "<V4>"
-        ],
-        "type": "NULL"
-      },
       {
         "params": [
           "<S>"
@@ -3490,12 +2692,6 @@
       {
         "params": [
           "<S3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<S4>"
         ],
         "type": "NULL"
       },
@@ -3521,11 +2717,11 @@
   },
   {
     "text": [
-      "What category does the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to?",
-      "What is the category of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+      "What category does the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to?",
+      "What is the category of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
     ],
     "nodes": [
       {
@@ -3580,24 +2776,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_name"
       }
@@ -3694,44 +2874,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<N4>"
+          "<N3>"
         ],
         "type": "NULL"
       },
@@ -3749,12 +2897,6 @@
       },
       {
         "params": [
-          "<S3>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
           "<V>"
         ],
         "type": "NULL"
@@ -3764,22 +2906,16 @@
           "<V2>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<V3>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What weight is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "What is the weight of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+      "What weight is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the weight of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
     ],
     "nodes": [
       {
@@ -3834,24 +2970,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_weight"
       }
@@ -3948,44 +3068,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<W4>"
+          "<W3>"
         ],
         "type": "NULL"
       },
@@ -4006,22 +3094,16 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What movability is the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> of?",
-      "What is the movability of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
+      "What movability is the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the movability of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
     ],
     "nodes": [
       {
@@ -4076,24 +3158,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_movability"
       }
@@ -4190,44 +3256,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<V4>"
+          "<V3>"
         ],
         "type": "NULL"
       },
@@ -4248,22 +3282,16 @@
           "<N3>"
         ],
         "type": "NULL"
-      },
-      {
-        "params": [
-          "<N4>"
-        ],
-        "type": "NULL"
       }
     ]
   },
   {
     "text": [
-      "What category does the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to?",
-      "What is the category of the <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
-      "The <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
-      "There is a <Z4> <W4> <C4> <M4> <V4> <S4><N4> [that is] <R3> the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+      "What category does the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belong to?",
+      "What is the category of the <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>?",
+      "The <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is a <Z3> <W3> <C3> <M3> <V3> <S3><N3> [that is] <R2> the <Z2> <W2> <C2> <M2> <V2> <S2><N2> [that is] <R> the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
     ],
     "nodes": [
       {
@@ -4318,24 +3346,8 @@
         "type": "relate_filter_unique"
       },
       {
-        "side_inputs": [
-          "<R3>",
-          "<Z4>",
-          "<W4>",
-          "<C4>",
-          "<M4>",
-          "<V4>",
-          "<S4>",
-          "<N4>"
-        ],
         "inputs": [
           3
-        ],
-        "type": "relate_filter_unique"
-      },
-      {
-        "inputs": [
-          4
         ],
         "type": "query_name"
       }
@@ -4432,44 +3444,12 @@
       {
         "type": "Name",
         "name": "<N3>"
-      },
-      {
-        "type": "Relation",
-        "name": "<R3>"
-      },
-      {
-        "type": "Size",
-        "name": "<Z4>"
-      },
-      {
-        "type": "Weight",
-        "name": "<W4>"
-      },
-      {
-        "type": "Color",
-        "name": "<C4>"
-      },
-      {
-        "type": "Material",
-        "name": "<M4>"
-      },
-      {
-        "type": "Movability",
-        "name": "<V4>"
-      },
-      {
-        "type": "Shape",
-        "name": "<S4>"
-      },
-      {
-        "type": "Name",
-        "name": "<N4>"
       }
     ],
     "constraints": [
       {
         "params": [
-          "<N4>"
+          "<N3>"
         ],
         "type": "NULL"
       },
@@ -4482,12 +3462,6 @@
       {
         "params": [
           "<N2>"
-        ],
-        "type": "NULL"
-      },
-      {
-        "params": [
-          "<N3>"
         ],
         "type": "NULL"
       }

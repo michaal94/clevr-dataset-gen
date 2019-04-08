@@ -170,7 +170,7 @@
         "material2": "-",
         "movability": "movable",
         "name": "coffee maker",
-        "shape": "cylindrical object",
+        "shape": "cylindrical",
         "size1": "large",
         "size2": "-",
         "weight": "heavy"
@@ -218,7 +218,7 @@
         "material2": "-",
         "movability": "portable",
         "name": "food box",
-        "shape": "cylindrical object",
+        "shape": "cylindrical",
         "size1": "medium-sized",
         "size2": "small",
         "weight": "light"

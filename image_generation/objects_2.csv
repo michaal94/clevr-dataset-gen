@@ -9,10 +9,10 @@ Bowl 3,TRUE,Ceramic,Plastic,FALSE,TRUE,brown,all plastic,medium-weight,portable,
 Chopping board 1,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,TRUE,large,medium-sized,cuboid
 Chopping board 2,TRUE,Plastic,Rubber,TRUE,TRUE,all plastic,all rubber,light,portable,FALSE,large,-,cuboid
 Chopping board 3,FALSE,Wooden,-,FALSE,FALSE,brown,-,medium-weight,portable,FALSE,large,-,irregularly shaped
-Coffee maker 1,FALSE,Plastic,-,FALSE,FALSE,black,-,heavy,movable,FALSE,large,-,cylindrical object
+Coffee maker 1,FALSE,Plastic,-,FALSE,FALSE,black,-,heavy,movable,FALSE,large,-,cylindrical
 Coffee maker 2,FALSE,Plastic,-,FALSE,FALSE,white,-,heavy,movable,FALSE,large,-,irregularly shaped
 Food box 1,FALSE,Plastic,-,FALSE,FALSE,white,-,light,portable,FALSE,medium-sized,-,irregularly shaped
-Food box 2,FALSE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,light,portable,TRUE,medium-sized,small,cylindrical object
+Food box 2,FALSE,Plastic,-,TRUE,FALSE,"lid white, box all plastic",-,light,portable,TRUE,medium-sized,small,cylindrical
 Fork 1,TRUE,Metal,Plastic,FALSE,FALSE,metallic,white,light,portable,FALSE,small,-,long and thin shaped
 Fork 2,FALSE,Metal,-,FALSE,FALSE,metallic,-,light,portable,FALSE,small,-,long and thin shaped
 Glass 1,FALSE,Glass,-,FALSE,FALSE,transparent,-,light,portable,FALSE,medium-sized,-,cylindrical
