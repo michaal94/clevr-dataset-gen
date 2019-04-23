@@ -133,7 +133,7 @@ parser.add_argument(
     '--num_images', default=5, type=int,
     help="The number of images to render")
 parser.add_argument(
-    '--filename_prefix', default='CLEVR',
+    '--filename_prefix', default='SHOP_VQA',
     help="This prefix will be prepended to the rendered images and JSON scenes")
 parser.add_argument(
     '--split', default='new',
@@ -149,7 +149,7 @@ parser.add_argument(
     help="The directory where output JSON scene structures will be stored. " +
     "It will be created if it does not exist.")
 parser.add_argument(
-    '--output_scene_file', default='../output/CLEVR_scenes.json',
+    '--output_scene_file', default='../output/SHOP_VQA_scenes.json',
     help="Path to write a single JSON file containing all scene information")
 parser.add_argument(
     '--output_blend_dir', default='output/blendfiles',

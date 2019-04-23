@@ -1,0 +1,294 @@
+[
+  {
+    "text": [
+      "Are there any other <Z2> <W2> <C2> <M2> <V2> <S2><N2>s that have the same shape as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that has the same shape as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Are there any other <Z2> <W2> <C2> <M2> <V2> <S2><N2>s of the same shape as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there another <Z2> <W2> <C2> <M2> <V2> <S2><N2> of the same shape as the <Z> <W> <C> <M> <V> <S><N>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_shape"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_exist"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Are there any other <Z2> <W2> <C2> <M2> <V2> <S2><N2>s that have the same size as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that has the same size as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Are there any other <Z2> <W2> <C2> <M2> <V2> <S2><N2>s of the same size as the <Z> <W> <C> <M> <V> <S><N>?",
+      "Is there another <Z2> <W2> <C2> <M2> <V2> <S2><N2> of the same size as the <Z> <W> <C> <M> <V> <S><N>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_size"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_exist"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<Z>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  }
+]

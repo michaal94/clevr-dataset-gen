@@ -19,9 +19,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--input_dir', default='output/scenes')
 parser.add_argument('--output_file', default='output/CLEVR_misc_scenes.json')
 parser.add_argument('--version', default='1.0')
-parser.add_argument('--date', default='7/8/2017')
+parser.add_argument('--date', default='15/04/2019')
 parser.add_argument('--license',
-           default='Creative Commons Attribution (CC-BY 4.0')
+           default='Creative Commons Attribution (CC-BY 4.0)')
 
 
 def main(args):

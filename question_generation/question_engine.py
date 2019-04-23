@@ -58,7 +58,6 @@ def vg_relate_handler(scene_struct, inputs, side_inputs):
     return sorted(list(output))
 
 
-
 def relate_handler(scene_struct, inputs, side_inputs):
     assert len(inputs) == 1
     assert len(side_inputs) == 1

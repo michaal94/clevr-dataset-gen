@@ -9,6 +9,7 @@ from __future__ import print_function
 import argparse, json, os, itertools, random, shutil
 import time
 import re
+from timeit import default_timer as timer
 
 import question_engine as qeng
 
@@ -90,6 +91,8 @@ parser.add_argument('--time_dfs', action='store_true',
         help="Time each depth-first search; must be given with --verbose")
 parser.add_argument('--profile', action='store_true',
         help="If given then run inside cProfile")
+parser.add_argument('--timeout', default=60, type=int,
+        help="Skip templete if failed to generate for n seconds")
 # args = parser.parse_args()
 
 
@@ -268,11 +271,20 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
     #     if 'N' in [x[1] for x in d["params"] if isinstance(x, str)]:
     #         constr = 'Name'
 
+    start = timer()
+
     while states:
+        stop = timer()
+        if stop - start > args.timeout:
+            print("Timed out")
+            break
         state = states.pop()
+        # print(len(states), state)
         # Check to make sure the current state is valid
         q = {'nodes': state['nodes']}
+        # print("ASD")
         outputs = qeng.answer_question(q, metadata, scene_struct, all_outputs=True)
+        # print("FGH")
         answer = outputs[-1]
         if answer == '__INVALID__':
             continue
@@ -295,9 +307,11 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                 v = state['vals'].get(p)
                 if v is not None:
                     skip = False
-                    if p_type == 'Shape' and v not in ['thing', '']:
+                    # if p_type == 'Shape' and v not in ['thing', '']:
+                    if p_type in ['Shape', 'Name'] and v not in ['thing', '']:
                         skip = True
-                    if p_type != 'Shape' and v != '':
+                    # if p_type != 'Shape' and v != '':
+                    if p_type not in ['Shape', 'Name'] and v != '':
                         skip = True
                     if skip:
                         if verbose:
@@ -436,6 +450,9 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
                             if param_name in constraint["params"]:
                                 if 'N' in param_name:
                                     constr = 'Name'
+                                    for constraint in template['constraints']:
+                                        if param_name.replace('N', 'S') in constraint["params"]:
+                                            constr = 'both'
                                 elif 'S' in param_name:
                                     constr = 'Shape'
                         if metadata['dataset'] == 'CLEVR-v1.0' and param_type == 'Shape':
@@ -532,9 +549,19 @@ def instantiate_templates_dfs(scene_struct, template, metadata, answer_counts,
         text = replace_optionals(text)
         text = ' '.join(text.split())
         text = other_heuristic(text, state['vals'])
+        text = replace_articles(text)
         text_questions.append(text)
 
     return text_questions, structured_questions, answers
+
+
+def replace_articles(text):
+    splitted = text.split()
+    for i in range(len(text.split()) - 1):
+        if splitted[i] == 'a' and splitted[i + 1][0] in ['a', 'e', 'i', 'o', 'u']:
+            splitted[i] = 'an'
+    new_text = ' '.join(splitted)
+    return new_text
 
 
 def adjust_plurals(text, plurals):
@@ -592,14 +619,19 @@ def main(args):
     # Key is (filename, file_idx)
     num_loaded_templates = 0
     templates = {}
-    for fn in os.listdir(args.template_dir):
-        if not fn.endswith('.json'): continue
+    q_individual_idx = dict()
+    ind_idx = 0
+    for fn in sorted(os.listdir(args.template_dir)):
+        if not fn.endswith('.json'):
+            continue
         with open(os.path.join(args.template_dir, fn), 'r') as f:
             base = os.path.splitext(fn)[0]
             for i, template in enumerate(json.load(f)):
                 num_loaded_templates += 1
                 key = (fn, i)
                 templates[key] = template
+                q_individual_idx[key] = ind_idx
+                ind_idx += 1
     print('Read %d templates from disk' % num_loaded_templates)
 
     def reset_counts():
@@ -620,6 +652,8 @@ def main(args):
             if final_dtype == 'Integer':
                 if metadata['dataset'] == 'CLEVR-v1.0':
                     answers = list(range(0, 11))
+                elif metadata['dataset'] == 'SHOP_VQA':
+                    answers = list(range(0, 8))
             template_answer_counts[key[:2]] = {}
             for a in answers:
                 template_answer_counts[key[:2]][a] = 0
@@ -665,6 +699,7 @@ def main(args):
         # templates. This is a simple heuristic to give a flat distribution over
         # templates.
         templates_items = list(templates.items())
+        random.shuffle(templates_items)
         templates_items = sorted(templates_items,
                                                 key=lambda x: template_counts[x[0][:2]])
         num_instantiated = 0
@@ -685,6 +720,9 @@ def main(args):
             if args.time_dfs and args.verbose:
                 toc = time.time()
                 print('that took ', toc - tic)
+                if toc-tic > 5:
+                    with open('./longqs.txt', 'a') as f:
+                        f.write('%s \t %d \t %f \t %s \n' % (fn, idx, tic-toc, template['text'][0]))
             image_index = int(os.path.splitext(scene_fn)[0].split('_')[-1])
             for t, q, a in zip(ts, qs, ans):
                 questions.append({
@@ -696,7 +734,8 @@ def main(args):
                     'program': q,
                     'answer': a,
                     'template_filename': fn,
-                    'question_family_index': idx,
+                    'question_in_family_index': idx,
+                    'question_family_index': q_individual_idx[(fn, idx)],
                     'question_index': len(questions),
                 })
             if len(ts) > 0:

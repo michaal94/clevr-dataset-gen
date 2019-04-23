@@ -665,7 +665,7 @@
         "inputs": [
           1
         ],
-        "type": "same_shape"
+        "type": "same_name"
       },
       {
         "inputs": [
@@ -1248,7 +1248,7 @@
           "<N>"
         ],
         "type": "NULL"
-      },
+      }
     ]
   },
   {
@@ -1739,7 +1739,7 @@
         "inputs": [
           1
         ],
-        "type": "same_shape"
+        "type": "same_name"
       },
       {
         "inputs": [
@@ -2280,7 +2280,7 @@
           "<N2>"
         ],
         "type": "NULL"
-      },
+      }
     ]
   },
   {
@@ -7996,13 +7996,13 @@
           "<S>"
         ],
         "type": "NULL"
-      },,
+      },
       {
         "params": [
           "<V>"
         ],
         "type": "NULL"
-      },
+      }
     ]
   },
   {
@@ -11577,5 +11577,4221 @@
       }
     ]
   },
-  //6 for weight , 6 for movab, 5 for name
+  {
+    "text": [
+      "What size is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what size?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its size?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What material is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what material is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is it made of?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What shape is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What movability is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the movability of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_movability"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What color is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the color of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what color is it?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What is the category of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What size is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what size?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its size?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What material is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what material is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is it made of?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What shape is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What movability is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the movability of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_movability"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What color is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the color of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what color is it?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What is the category of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same weight as the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_weight"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<W>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What size is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what size?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its size?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What material is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what material is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is it made of?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What shape is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What color is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the color of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What weight is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the weight of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_weight"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What is the category of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What size is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what size?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its size?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What material is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what material is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is it made of?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What shape is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the shape of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what shape?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what shape is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its shape?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What color is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the color of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What weight is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the weight of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_weight"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What is the category of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N> belongs to what category?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what category does it belong to?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that is of the same movability as the <Z> <W> <C> <M> <V> <S><N>; what is its category?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_movability"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_name"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<V>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What size is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the size of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N> is what size?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what size is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is its size?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_name"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What material is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the material of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what material is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is its material?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is it made of?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_name"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What color is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the color of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N> is what color?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what color is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is its color?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_name"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What movability is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N> of?",
+      "What is the movability of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N> is of what movability?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what movability is it of?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is its movability?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_name"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_movability"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<V2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "What weight is the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "What is the weight of the other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>?",
+      "The other <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N> is of what weight?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what weight is it?",
+      "There is another <Z2> <W2> <C2> <M2> <V2> <S2><N2> that belongs to the same category as the <Z> <W> <C> <M> <V> <S><N>; what is its weight?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<W>",
+          "<C>",
+          "<M>",
+          "<V>",
+          "<S>",
+          "<N>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "same_name"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<W2>",
+          "<C2>",
+          "<M2>",
+          "<V2>",
+          "<S2>",
+          "<N2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_weight"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Name",
+        "name": "<N>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Weight",
+        "name": "<W2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Movability",
+        "name": "<V2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Name",
+        "name": "<N2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<N>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<N2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<W2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  }
 ]

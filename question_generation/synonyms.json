@@ -4,8 +4,6 @@
   "cube": ["cube", "block"],
   "large": ["large", "big"],
   "small": ["small", "tiny"],
-  "metallic": ["metallic", "shiny"],
-  "rubber": ["rubber", "matte"],
   "left": ["left of", "to the left of", "on the left side of"],
   "right": ["right of", "to the right of", "on the right side of"],
   "behind": ["behind"],

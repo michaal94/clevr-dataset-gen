@@ -6,7 +6,7 @@
     "Integer": null,
     "Bool": null,
     "Shape": [
-      "cuboid", "irregularly shaped", "hemisphere", "cylindrical", "long and thin shaped"
+      "cuboid", "irregularly shaped", "hemisphere", "cylindrical", "long and thin shaped", "flat"
     ],
     "Color": [
       "gray", "red", "blue", "green", "brown", "purple", "cyan", "yellow", "white", "metallic", "transparent", "black"
